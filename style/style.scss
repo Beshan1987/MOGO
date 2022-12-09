@@ -9,7 +9,8 @@
 }
 
 .page-first {
-	background: url(./img/Gradient_BG.png), url(./img/BG.jpg);
+	background: url(./img/Gradient_BG.png) no-repeat, url(./img/BG.jpg);
+	background-size: cover;
 	color: white;
 }
 

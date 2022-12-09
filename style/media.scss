@@ -100,3 +100,12 @@
 		padding-top: 10px;
 	}
 }
+
+@media (max-width: 1510px) {
+	.page-first {
+		background: url(./img/Gradient_BG.png) no-repeat, url(./img/BG.jpg);
+		background-size: cover;
+		background-position: center;
+		color: white;
+	}
+}
