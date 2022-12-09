@@ -1,0 +1,73 @@
+@media (max-width: 980px) {
+  .page-first__nav_container .page-first__nav .page-first__nav-link {
+    font-size: 13px;
+  }
+  .page-first__main .page-first__main_container {
+    height: 520px;
+  }
+  .page-first__main .page-first__main_container .page-first__upper {
+    font-size: 48px;
+  }
+  .page-first__main .page-first__main_container .page-first__title {
+    font-size: 96px;
+    background: url(./img/underline_1024-title.png) no-repeat bottom center;
+  }
+  .page-first__main .page-first__main_container .page-first__button button {
+    height: 52px;
+    width: 317px;
+    font-size: 18px;
+  }
+  .page-first__nav-footer-list .page-first__nav-footer-item a {
+    font-size: 20px;
+  }
+  .page-first__nav-footer-list .page-first__nav-footer-item p span {
+    font-size: 35px;
+  }
+}
+@media (max-width: 760px) {
+  .page-first__nav-footer-list .page-first__nav-footer-item a {
+    font-size: 15px;
+  }
+  .page-first__nav-footer-list .page-first__nav-footer-item p span {
+    font-size: 25px;
+  }
+}
+@media (max-width: 610px) {
+  .page-first__nav_container .page-first__nav_burger {
+    display: block;
+    justify-self: end;
+  }
+  .page-first__nav_container .page-first__nav {
+    display: none;
+  }
+  .page-first__nav-footer-list .page-first__nav-footer-item {
+    background: url(./img/Line_mobile.png) no-repeat top;
+    height: 42px;
+    transition: 0.8s;
+  }
+  .page-first__nav-footer-list .page-first__nav-footer-item:hover {
+    background: url(./img/Line_mobile_red.png) no-repeat top;
+    cursor: pointer;
+  }
+  .page-first__nav-footer-list .page-first__nav-footer-item a {
+    display: none;
+  }
+  .page-first__nav_container {
+    height: 50px;
+  }
+  .page-first__main .page-first__main_container {
+    grid-template-rows: 20% 40% 40%;
+    height: 430px;
+  }
+  .page-first__main .page-first__main_container .page-first__upper {
+    font-size: 36px;
+  }
+  .page-first__main .page-first__main_container .page-first__title {
+    font-size: 48px;
+    background: url(./img/underline_1024-title.png) no-repeat bottom center;
+  }
+  .page-first__main .page-first__main_container .page-first__button button {
+    height: 54px;
+    width: 285px;
+  }
+}/*# sourceMappingURL=media.css.map */
