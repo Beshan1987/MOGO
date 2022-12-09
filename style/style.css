@@ -333,7 +333,7 @@ select {
     display: none;
   }
   .page-first__nav_container {
-    height: 50px;
+    height: 70px;
   }
   .page-first__main .page-first__main_container {
     grid-template-rows: 20% 40% 40%;
@@ -349,5 +349,8 @@ select {
   .page-first__main .page-first__main_container .page-first__button button {
     height: 54px;
     width: 285px;
+  }
+  .page-first__nav-footer {
+    padding-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
