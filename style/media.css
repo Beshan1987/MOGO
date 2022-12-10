@@ -23,6 +23,28 @@
   .page-first__nav-footer-list .page-first__nav-footer-item p span {
     font-size: 35px;
   }
+  .page-second .second-page_title {
+    height: 26.4957264957%;
+    grid-template-rows: 21.6129032258% 21.6129032258% 6.4516129032% 41.935483871%;
+  }
+  .page-second .second-page_title .title-upper {
+    font-size: 24px;
+  }
+  .page-second .second-page_title .title-main {
+    font-size: 24px;
+  }
+  .page-second .second-page_title .title-main-description {
+    font-size: 14px;
+  }
+  .page-second__main .page-second__main-img-wrap .page-second__main-wrap-card .page-second__main-reg-link {
+    font-size: 18px;
+  }
+  .page-second__main .page-second__main-img-wrap2 .page-second__main-wrap-card .page-second__main-reg-link {
+    font-size: 18px;
+  }
+  .page-second__main .page-second__main-img-wrap3 .page-second__main-wrap-card .page-second__main-reg-link {
+    font-size: 18px;
+  }
 }
 @media (max-width: 760px) {
   .page-first__nav-footer-list .page-first__nav-footer-item a {
@@ -72,6 +94,98 @@
   }
   .page-first__nav-footer {
     padding-top: 10px;
+  }
+  .page-second__main {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
+    height: 830px;
+  }
+  .page-second__main .page-second__main-img-wrap {
+    background: url(./img/back_card1_mob.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
+  .page-second__main .page-second__main-img-wrap .page-second__main-wrap-card {
+    background: none;
+    display: grid;
+    align-content: end;
+  }
+  .page-second__main .page-second__main-img-wrap .page-second__main-wrap-card:hover {
+    transform: translate(-10px, -10px);
+    background: none;
+  }
+  .page-second__main .page-second__main-img-wrap .page-second__main-wrap-card .page-second__main-reg-link {
+    background: url(./img/page_second_card1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2px;
+    height: 83px;
+    align-items: center;
+    justify-items: start;
+    padding-left: 20px;
+  }
+  .page-second__main .page-second__main-img-wrap2 {
+    background: url(./img/back_card2_mob.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
+  .page-second__main .page-second__main-img-wrap2 .page-second__main-wrap-card {
+    background: none;
+    display: grid;
+    align-content: end;
+  }
+  .page-second__main .page-second__main-img-wrap2 .page-second__main-wrap-card:hover {
+    transform: translate(-10px, -10px);
+    background: none;
+  }
+  .page-second__main .page-second__main-img-wrap2 .page-second__main-wrap-card .page-second__main-reg-link {
+    background: url(./img/page_second_card1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2px;
+    height: 83px;
+    align-items: center;
+    justify-items: start;
+    padding-left: 20px;
+  }
+  .page-second__main .page-second__main-img-wrap3 {
+    background: url(./img/back_card3_mob.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
+  .page-second__main .page-second__main-img-wrap3 .page-second__main-wrap-card {
+    background: none;
+    display: grid;
+    align-content: end;
+  }
+  .page-second__main .page-second__main-img-wrap3 .page-second__main-wrap-card:hover {
+    transform: translate(-10px, -10px);
+    background: none;
+  }
+  .page-second__main .page-second__main-img-wrap3 .page-second__main-wrap-card .page-second__main-reg-link {
+    background: url(./img/page_second_card1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    font-size: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2px;
+    height: 83px;
+    align-items: center;
+    justify-items: start;
+    padding-left: 20px;
   }
 }
 @media (max-width: 1510px) {
