@@ -159,7 +159,7 @@
 	grid-template-rows:
 		calc(80 / 310 * 100%) calc(81 / 310 * 100%) calc(24 / 310 * 100%)
 		calc(118 / 310 * 100%);
-	height: calc(310 / 1170 * 100%);
+	height: 30vh;
 	justify-items: center;
 	align-items: center;
 	padding-top: calc(42 / 1170 * 100%);
@@ -198,7 +198,7 @@
 	padding-top: calc(58 / 1170 * 100%);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	height: 40vh;
+	height: calc(320 / 900 * 100%);
 
 	.page-second__main-img-wrap {
 		background: #95e1d3;
