@@ -8,11 +8,16 @@
 	}
 	.page-first__main {
 		.page-first__main_container {
+			padding-top: calc(20 / 1170 * 100%);
+			display: grid;
+			grid-template-rows: 20% 50% 30%;
+			text-align: center;
+			height: 80vh;
 			.page-first__upper {
 				font-size: 48px;
 			}
 			.page-first__title {
-				font-size: 96px;
+				font-size: 60px;
 				background: url(./img/underline_1024-title.png) no-repeat bottom center;
 			}
 			.page-first__button {
@@ -80,6 +85,9 @@
 			}
 		}
 	}
+}
+
+@media (max-width: 980px) and (orientation: portrait) {
 }
 
 @media (max-width: 760px) {

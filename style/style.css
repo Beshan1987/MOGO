@@ -462,11 +462,18 @@ select {
   .page-first__nav_container .page-first__nav .page-first__nav-link {
     font-size: 13px;
   }
+  .page-first__main .page-first__main_container {
+    padding-top: 1.7094017094%;
+    display: grid;
+    grid-template-rows: 20% 50% 30%;
+    text-align: center;
+    height: 80vh;
+  }
   .page-first__main .page-first__main_container .page-first__upper {
     font-size: 48px;
   }
   .page-first__main .page-first__main_container .page-first__title {
-    font-size: 96px;
+    font-size: 60px;
     background: url(./img/underline_1024-title.png) no-repeat bottom center;
   }
   .page-first__main .page-first__main_container .page-first__button button {
