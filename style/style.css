@@ -285,6 +285,7 @@ select {
 .page-second {
   background: #e5e5e5;
   padding: 0px 15px 0px 15px;
+  height: 100%;
 }
 
 .second-page_title {
