@@ -61,7 +61,7 @@
 	display: grid;
 	grid-template-rows: 11% 57% 32%;
 	text-align: center;
-	height: 780px;
+	height: 70vh;
 	.page-first__upper {
 		font-family: "Kaushan Script";
 		font-style: normal;
@@ -151,7 +151,7 @@
 .page-second {
 	background: #e5e5e5;
 	padding: 0px 15px 0px 15px;
-	height: 100%;
+	height: 100vh;
 }
 
 .second-page_title {
@@ -198,7 +198,7 @@
 	padding-top: calc(58 / 1170 * 100%);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	height: calc(320 / 1170 * 100%);
+	height: 40vh;
 
 	.page-second__main-img-wrap {
 		background: #95e1d3;
@@ -270,7 +270,10 @@
 	}
 	.page-second__main-img-wrap3 {
 		background: #95e1d3;
-		margin-right: 0px;
+		margin-right: 0;
+		&:hover {
+			margin-right: 30px;
+		}
 
 		.page-second__main-wrap-card {
 			background: url(./img/page_second_card3.png) no-repeat;

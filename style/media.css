@@ -2,9 +2,6 @@
   .page-first__nav_container .page-first__nav .page-first__nav-link {
     font-size: 13px;
   }
-  .page-first__main .page-first__main_container {
-    height: 520px;
-  }
   .page-first__main .page-first__main_container .page-first__upper {
     font-size: 48px;
   }
@@ -79,7 +76,7 @@
   }
   .page-first__main .page-first__main_container {
     grid-template-rows: 20% 40% 40%;
-    height: 430px;
+    height: 80vh;
   }
   .page-first__main .page-first__main_container .page-first__upper {
     font-size: 36px;
@@ -101,7 +98,7 @@
     row-gap: 20px;
     -moz-column-gap: 0px;
          column-gap: 0px;
-    height: 830px;
+    height: 40vh;
   }
   .page-second__main .page-second__main-img-wrap {
     background: url(./img/back_card1_mob.png) no-repeat;
@@ -164,6 +161,9 @@
     background-position: center;
     background-size: cover;
     margin: 0;
+  }
+  .page-second__main .page-second__main-img-wrap3:hover {
+    margin-right: 0px;
   }
   .page-second__main .page-second__main-img-wrap3 .page-second__main-wrap-card {
     background: none;

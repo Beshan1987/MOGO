@@ -195,7 +195,7 @@ select {
   display: grid;
   grid-template-rows: 11% 57% 32%;
   text-align: center;
-  height: 780px;
+  height: 70vh;
 }
 .page-first__main_container .page-first__upper {
   font-family: "Kaushan Script";
@@ -285,7 +285,7 @@ select {
 .page-second {
   background: #e5e5e5;
   padding: 0px 15px 0px 15px;
-  height: 100%;
+  height: 100vh;
 }
 
 .second-page_title {
@@ -328,7 +328,7 @@ select {
   padding-top: 4.9572649573%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 27.3504273504%;
+  height: 40vh;
 }
 .page-second__main .page-second__main-img-wrap {
   background: #95e1d3;
@@ -394,7 +394,10 @@ select {
 }
 .page-second__main .page-second__main-img-wrap3 {
   background: #95e1d3;
-  margin-right: 0px;
+  margin-right: 0;
+}
+.page-second__main .page-second__main-img-wrap3:hover {
+  margin-right: 30px;
 }
 .page-second__main .page-second__main-img-wrap3 .page-second__main-wrap-card {
   background: url(./img/page_second_card3.png) no-repeat;
@@ -458,9 +461,6 @@ select {
 @media (max-width: 980px) {
   .page-first__nav_container .page-first__nav .page-first__nav-link {
     font-size: 13px;
-  }
-  .page-first__main .page-first__main_container {
-    height: 520px;
   }
   .page-first__main .page-first__main_container .page-first__upper {
     font-size: 48px;
@@ -536,7 +536,7 @@ select {
   }
   .page-first__main .page-first__main_container {
     grid-template-rows: 20% 40% 40%;
-    height: 430px;
+    height: 80vh;
   }
   .page-first__main .page-first__main_container .page-first__upper {
     font-size: 36px;
@@ -558,7 +558,7 @@ select {
     row-gap: 20px;
     -moz-column-gap: 0px;
          column-gap: 0px;
-    height: 830px;
+    height: 40vh;
   }
   .page-second__main .page-second__main-img-wrap {
     background: url(./img/back_card1_mob.png) no-repeat;
@@ -621,6 +621,9 @@ select {
     background-position: center;
     background-size: cover;
     margin: 0;
+  }
+  .page-second__main .page-second__main-img-wrap3:hover {
+    margin-right: 0px;
   }
   .page-second__main .page-second__main-img-wrap3 .page-second__main-wrap-card {
     background: none;
