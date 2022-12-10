@@ -21,7 +21,7 @@
     font-size: 35px;
   }
   .page-second .second-page_title {
-    height: 26.4957264957%;
+    height: 35vh;
     grid-template-rows: 21.6129032258% 21.6129032258% 6.4516129032% 41.935483871%;
   }
   .page-second .second-page_title .title-upper {
@@ -93,7 +93,7 @@
     padding-top: 10px;
   }
   .page-second .second-page_title {
-    height: 30vh;
+    height: 35vh;
     grid-template-rows: 21.6129032258% 21.6129032258% 6.4516129032% 41.935483871%;
   }
   .page-second .second-page_title .title-upper {
@@ -111,7 +111,7 @@
     row-gap: 20px;
     -moz-column-gap: 0px;
          column-gap: 0px;
-    height: 70vh;
+    height: 60vh;
   }
   .page-second__main .page-second__main-img-wrap {
     background: url(./img/back_card1_mob.png) no-repeat;
