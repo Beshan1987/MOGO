@@ -5,235 +5,222 @@
 ._container {
 	margin: 0 auto;
 	max-width: 1170px;
-	min-width: 300px;
-	min-height: 100vh;
+	min-width: 320px;
 }
 
 .page-first {
 	background: url(./img/Gradient_BG.png) no-repeat, url(./img/BG.jpg);
 	background-size: cover;
+	background-position: center;
 	color: white;
 }
 
 .page-first__nav_container {
-	display: grid;
-	grid-template-columns: 40% 60%;
-	grid-template-rows: 100%;
-	align-items: center;
-	height: 100px;
-	padding: 0 15px 0 15px;
+	@include flex(row, center, space-between);
+	padding: 5px 15px;
+	.nav-logo_wrap {
+		width: 10%;
+		&:hover {
+			@extend %hover_icons;
+		}
+	}
 	.page-first__nav_burger {
 		display: none;
 	}
 	.page-first__nav {
-		padding-inline-start: 0px;
-		gap: 5px;
+		@include flex(row, center, space-between);
 		list-style: none;
-		display: grid;
-		grid-template-columns: 15% 15% 15% 15% 15% 25%;
-
+		width: 80%;
 		.page-first__nav-link {
 			text-decoration: none;
-			font-family: "Raleway";
-			font-style: normal;
-			font-weight: 600;
-			font-size: calc(14 / $fonts_page-first * 10px);
-			line-height: calc(16 / 14 * 100%);
+			@extend %font_Raleway_600;
+			@include fonts_properties(calc(13px + 0.2vw), calc(15 / 3 * 100%));
 			text-transform: uppercase;
 			color: inherit;
 			padding-bottom: 5px;
 			transition: 0.5s;
-
 			&:hover {
-				border-bottom: 1px solid #f4bf87;
-				color: #f4bf87;
+				@extend %hover_links;
 			}
 		}
 		.page-first__nav-icons {
-			display: grid;
-			grid-template-columns: 50% 50%;
-			justify-items: center;
+			@include flex(row, center, space-between);
+			width: 10%;
+			> :hover {
+				@extend %hover_icons;
+			}
 		}
 	}
 }
 .page-first__main_container {
-	padding-top: calc(77 / 1170 * 100%);
-	display: grid;
-	grid-template-rows: 11% 57% 32%;
-	text-align: center;
-	height: 80vh;
+	padding-top: calc(110 / 1170 * 100%);
+	@include flex(column, center, center);
+	width: calc(795 / 1170 * 100%);
+	margin: 0 auto;
 	.page-first__upper {
-		font-family: "Kaushan Script";
-		font-style: normal;
-		font-weight: 400;
-		font-size: calc(64 / $fonts_page-first * 10px);
-		line-height: calc(93 / 64 * 100%);
+		@extend %font_Kaushan_Script_400;
+		@include fonts_properties(calc(24px + 2vw), calc(93 / 64 * 100%));
 		color: #ffffff;
 	}
 	.page-first__title {
-		font-family: "Montserrat";
-		font-style: normal;
-		font-weight: 700;
-		font-size: calc(144 / $fonts_page-first * 10px);
-		line-height: calc(176 / 144 * 100%);
+		@extend %font_Raleway_700;
+		@include fonts_properties(calc(35px + 6vw), calc(176 / 144 * 100%));
 		color: #ffffff;
 		text-transform: uppercase;
 		background: url(./img/divider.png) no-repeat bottom center;
+		padding-bottom: calc(44 / 795 * 100%);
+		text-align: center;
+		flex: 1;
+		min-width: 0;
+	}
+	.page-first__button-wrap {
+		@include grid(center, center);
+		padding-top: calc(74 / 795 * 100%);
 	}
 	.page-first__button {
-		display: grid;
-		justify-items: center;
-		align-content: center;
-	}
-	button {
-		height: 78px;
-		width: 370px;
+		width: calc(250px + 4vw);
 		border: 4px solid #ffffff;
 		background: none;
-
-		a {
-			text-transform: uppercase;
-			color: #ffffff;
-			text-decoration: none;
-			font-weight: 700;
-			font-size: calc(24 / $fonts_page-first * 10px);
-			line-height: calc(28 / 24 * 100%);
-			transition: 0.5s;
-		}
-		& :hover {
-			color: #f38281;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-decoration: none;
+		@include fonts_properties(calc(18px + 0.4vw), calc(52 / 22 * 100%));
+		transition: 0.6s;
+		@extend %font_Raleway_700;
+		&:hover {
+			color: #e4be8d;
+			background: #ffffff;
+			cursor: pointer;
 		}
 	}
 }
 
 .page-first__nav-footer {
 	padding: 0 15px 0 15px;
-	padding-top: calc(50 / 1170 * 100%);
+	padding-top: calc(116 / 1170 * 100%);
+	width: 100%;
 }
 .page-first__nav-footer-list {
-	display: grid;
-	column-gap: 30px;
-	grid-template-columns: repeat(4, 1fr);
-	align-items: center;
+	@include flex(row, center, space-between);
 }
 
 .page-first__nav-footer-item {
-	display: grid;
-	align-items: center;
+	width: 24%;
+	background: url(./img/upper_line_white.png) no-repeat top;
+	transition: 0.5s;
+	opacity: 0.8;
+	color: #f9efcf;
 	a {
-		background: url(./img/upper_line_white.png) no-repeat top;
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 400;
-		font-size: calc(25 / $fonts_page-first * 10px);
-		line-height: calc(85 / (25 / $fonts_page-first * 10) * 100%);
-		display: grid;
-		align-items: center;
-		color: #f9efcf;
+		@extend %font_Raleway_400;
+		@include fonts_properties(calc(18px + 0.2vw), calc(22 / 18 * 100%));
 		text-decoration: none;
 		text-transform: uppercase;
-		transition: 0.5s;
-		opacity: 0.8;
+		@include flex(row, center, stretch);
+		color: inherit;
+
 		p span {
-			font-size: 50px;
+			@include fonts_properties(calc(32px + 0.2vw), calc(80 / 35 * 100%));
 			font-weight: 700;
-			color: #ffffff;
 		}
 	}
-	& a:hover {
+	&:hover {
 		background: url(./img/upper_line_red.png) no-repeat left top,
 			url(./img/upper_line_white.png) no-repeat top;
 		opacity: 1;
-		color: #f38281;
+		color: #ffffff;
 	}
 }
 
 .page-second {
-	background: #e5e5e5;
-	padding: 0px 15px 0px 15px;
-	min-height: 100vh;
-}
-
-.second-page_title {
-	display: grid;
-	grid-template-rows:
-		calc(80 / 310 * 100%) calc(81 / 310 * 100%) calc(24 / 310 * 100%)
-		calc(118 / 310 * 100%);
-	height: 35vh;
-	justify-items: center;
-	align-items: center;
-	padding-top: calc(42 / 1170 * 100%);
+	padding: 0px 15px;
 }
 
 .title {
-	.title-upper {
-		font-family: "Kaushan Script";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 30px;
-		line-height: calc(44 / 30 * 100%);
-		color: #2d3033;
-	}
-	.title-main {
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 900;
-		font-size: 36px;
-		line-height: calc(42 / 36 * 100%);
-		text-transform: uppercase;
-		color: #2d3033;
-	}
-	.title-main-description {
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: calc(21 / 18 * 100%);
-		color: #000000;
-		text-align: center;
-	}
+	@include flex(column, center, center);
+	color: #2d3033;
+}
+
+.title_page-second {
+	padding-top: calc(41 / 1170 * 100%);
+}
+
+.title-upper {
+	@extend %font_Kaushan_Script_400;
+	font-size: calc(24px + 0.4vw);
+	line-height: calc(35 / 14 * 100%);
+}
+.title-main {
+	@extend %font_Raleway_900;
+	font-size: calc(24px + 0.6vw);
+	line-height: calc(28 / 12 * 100%);
+	text-transform: uppercase;
+	padding-bottom: calc(24 / 1170 * 100%);
+}
+.title-main-description {
+	@extend %font_Raleway_400;
+	font-size: calc(14px + 0.2vw);
+	line-height: calc(21 / 18 * 100%);
+	color: #000000;
+	text-align: center;
+	height: 118px;
+	display: flex;
+	align-items: center;
 }
 
 .page-second__main {
 	padding-top: calc(58 / 1170 * 100%);
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	height: 35vh;
+	@include flex(row, center, space-between);
+	width: 100%;
 
-	.page-second__main-img-wrap {
+	.page-second__main-card {
 		background: #95e1d3;
-		margin-right: 30px;
+		width: calc(370 / 1170 * 100%);
 
-		.page-second__main-wrap-card {
+		.page-second__bg {
+			padding-bottom: calc(338 / 370 * 100%);
 			background: url(./img/back_card1_mob.png) no-repeat;
 			background-size: cover;
-			background-position: center;
-			width: 100%;
-			height: 100%;
-			transition: 0.8s;
-			display: grid;
-			align-items: center;
-
+			color: #ffffff;
+			position: relative;
+			transition: 0.5s;
 			&:hover {
+				background: url(./img/page_second_card1.png) no-repeat;
+				transition: 0.5s;
+				background-size: cover;
 				transform: translate(-10px, -10px);
-				background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-					url(./img/page_second_card1.png) no-repeat;
+				cursor: pointer;
 			}
-			.page-second__main-reg-link {
-				display: grid;
-				font-family: "Raleway";
-				font-style: normal;
-				font-weight: 500;
-				font-size: 24px;
-				line-height: 28px;
+			&:hover .page-second__reg-wrap {
+				opacity: 1;
+			}
+
+			.page-second__reg-wrap {
+				@include flex(column, center, space-between);
+				opacity: 0;
+				position: absolute;
+				top: 35%;
+				left: 35%;
+				@include fonts_properties(calc(18px + 0.2vw), calc(21 / 18 * 100%));
 				text-transform: uppercase;
-				color: #ffffff;
-				text-decoration: none;
-				justify-items: center;
-				row-gap: 32px;
+				@extend %font_Raleway_500;
+				transition: 0.5s;
+				:first-child {
+					margin-bottom: 10px;
+				}
 			}
 		}
 	}
+
+	.page-second__main-card .card-second {
+		background: url(./img/back_card2_mob.png) no-repeat;
+		background-size: cover;
+	}
+
+	.page-second__main-card .card-third {
+		background: url(./img/back_card3_mob.png) no-repeat;
+		background-size: cover;
+	}
+
 	.page-second__main-img-wrap2 {
 		background: #95e1d3;
 		margin-right: 30px;

@@ -1,1 +1,79 @@
 $fonts_page-first: 10;
+
+%font_Raleway_600 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 600;
+}
+
+%font_Raleway_400 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+}
+
+%font_Raleway_500 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 500;
+}
+
+%font_Raleway_700 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+}
+
+%font_Raleway_900 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 900;
+}
+
+%font_Montserrat_400 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+}
+
+%font_Montserrat_700 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+}
+
+%font_Kaushan_Script_400 {
+	font-family: "Kaushan Script";
+	font-style: normal;
+	font-weight: 400;
+}
+
+@mixin fonts_properties($size, $line) {
+	font-size: $size;
+	line-height: $line;
+}
+
+@mixin flex($flow, $align-items, $justify-content) {
+	display: flex;
+	flex-flow: $flow;
+	align-items: $align-items;
+	justify-content: $justify-content;
+}
+
+@mixin grid($justy_item, $align-content) {
+	display: grid;
+	justify-items: $justy_item;
+	align-content: $align-content;
+}
+
+%hover_links {
+	border-bottom: 1px solid #e4be8d;
+	color: #e4be8d;
+	transition: 0.5s;
+}
+
+%hover_icons {
+	transition: 0.5s;
+	opacity: 0.8;
+	cursor: pointer;
+}
