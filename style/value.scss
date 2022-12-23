@@ -53,11 +53,12 @@ $fonts_page-first: 10;
 	line-height: $line;
 }
 
-@mixin flex($flow, $align-items, $justify-content) {
+@mixin flex($flow, $align-items, $justify-content, $wrap) {
 	display: flex;
 	flex-flow: $flow;
 	align-items: $align-items;
 	justify-content: $justify-content;
+	flex-wrap: $wrap;
 }
 
 @mixin grid($justy_item, $align-content) {
@@ -70,10 +71,20 @@ $fonts_page-first: 10;
 	border-bottom: 1px solid #e4be8d;
 	color: #e4be8d;
 	transition: 0.5s;
+	cursor: pointer;
 }
 
 %hover_icons {
 	transition: 0.5s;
 	opacity: 0.8;
 	cursor: pointer;
+}
+
+%img-adapt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
 }

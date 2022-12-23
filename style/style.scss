@@ -16,7 +16,7 @@
 }
 
 .page-first__nav_container {
-	@include flex(row, center, space-between);
+	@include flex(row, center, space-between, wrap);
 	padding: 5px 15px;
 	.nav-logo_wrap {
 		width: 10%;
@@ -28,7 +28,7 @@
 		display: none;
 	}
 	.page-first__nav {
-		@include flex(row, center, space-between);
+		@include flex(row, center, space-between, wrap);
 		list-style: none;
 		width: 80%;
 		.page-first__nav-link {
@@ -44,7 +44,7 @@
 			}
 		}
 		.page-first__nav-icons {
-			@include flex(row, center, space-between);
+			@include flex(row, center, space-between, wrap);
 			width: 10%;
 			> :hover {
 				@extend %hover_icons;
@@ -54,7 +54,7 @@
 }
 .page-first__main_container {
 	padding-top: calc(110 / 1170 * 100%);
-	@include flex(column, center, center);
+	@include flex(column, center, center, wrap);
 	width: calc(795 / 1170 * 100%);
 	margin: 0 auto;
 	.page-first__upper {
@@ -101,7 +101,7 @@
 	width: 100%;
 }
 .page-first__nav-footer-list {
-	@include flex(row, center, space-between);
+	@include flex(row, center, space-between, wrap);
 }
 
 .page-first__nav-footer-item {
@@ -115,7 +115,7 @@
 		@include fonts_properties(calc(18px + 0.2vw), calc(22 / 18 * 100%));
 		text-decoration: none;
 		text-transform: uppercase;
-		@include flex(row, center, stretch);
+		@include flex(row, center, stretch, wrap);
 		color: inherit;
 
 		p span {
@@ -132,11 +132,11 @@
 }
 
 .page-second {
-	padding: 0px 15px;
+	padding: 0px 5px;
 }
 
 .title {
-	@include flex(column, center, center);
+	@include flex(column, center, center, wrap);
 	color: #2d3033;
 }
 
@@ -169,8 +169,10 @@
 
 .page-second__main {
 	padding-top: calc(58 / 1170 * 100%);
-	@include flex(row, center, space-between);
+	@include flex(row, center, space-between, wrap);
 	width: 100%;
+
+	margin-bottom: calc(108 / 1170 * 100%);
 
 	.page-second__main-card {
 		background: #95e1d3;
@@ -195,11 +197,11 @@
 			}
 
 			.page-second__reg-wrap {
-				@include flex(column, center, space-between);
+				@include flex(column, center, space-between, wrap);
 				opacity: 0;
 				position: absolute;
-				top: 35%;
-				left: 35%;
+				top: calc(50% - 82px / 2);
+				width: 100%;
 				@include fonts_properties(calc(18px + 0.2vw), calc(21 / 18 * 100%));
 				text-transform: uppercase;
 				@extend %font_Raleway_500;
@@ -220,90 +222,86 @@
 		background: url(./img/back_card3_mob.png) no-repeat;
 		background-size: cover;
 	}
-
-	.page-second__main-img-wrap2 {
-		background: #95e1d3;
-		margin-right: 30px;
-
-		.page-second__main-wrap-card {
-			background: url(./img/page_second_card2.png) no-repeat;
-			background-size: cover;
-			background-position: center;
-			width: 100%;
-			height: 100%;
-			transition: 0.8s;
-			align-items: center;
-			display: grid;
-
-			&:hover {
-				transform: translate(-10px, -10px);
-				background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-					url(./img/page_second_card1.png) no-repeat;
-			}
-			.page-second__main-reg-link {
-				display: grid;
-				font-family: "Raleway";
-				font-style: normal;
-				font-weight: 500;
-				font-size: 24px;
-				line-height: 28px;
-				text-transform: uppercase;
-				color: #ffffff;
-				text-decoration: none;
-				justify-items: center;
-				row-gap: 32px;
-			}
-		}
-	}
-	.page-second__main-img-wrap3 {
-		background: #95e1d3;
-		margin-right: 0;
-		&:hover {
-			margin-right: 30px;
-		}
-
-		.page-second__main-wrap-card {
-			background: url(./img/page_second_card3.png) no-repeat;
-			background-size: cover;
-			background-position: center;
-			width: 100%;
-			height: 100%;
-			transition: 0.8s;
-			align-items: center;
-			display: grid;
-
-			&:hover {
-				transform: translate(-10px, -10px);
-				background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-					url(./img/page_second_card1.png) no-repeat;
-			}
-			.page-second__main-reg-link {
-				display: grid;
-				font-family: "Raleway";
-				font-style: normal;
-				font-weight: 500;
-				font-size: 24px;
-				line-height: 28px;
-				text-transform: uppercase;
-				color: #ffffff;
-				text-decoration: none;
-				justify-items: center;
-				row-gap: 32px;
-			}
-		}
-	}
 }
+
 .page-second__footer {
-	display: none;
-}
+	background-color: #95e1d3;
+	.page-second__footer-wrap {
+		@include flex(row, center, center, wrap);
+		color: #ffffff;
+		div:first-child {
+			padding-left: 10px;
+		}
 
-.wrap-whole {
-	display: flex;
-	flex-flow: column;
-	.wrapper {
-		flex: 1 1 auto;
+		.page-second__footer-item {
+			@include flex(column, center, center, wrap);
+			width: calc(144px + 4vw);
+			height: calc(124px + 4vw);
+			@extend %font_Raleway_700;
+			border-left: 1px solid #ffffff;
+			border-right: 1px solid #ffffff;
+			flex: 1 1 auto;
+			span:first-child {
+				@include fonts_properties(calc(48px + 0.2vw), calc(56 / 48 * 100%));
+				&:hover {
+					@extend %hover_links;
+					border: none;
+				}
+			}
+			span:last-child {
+				@include fonts_properties(calc(14px + 0.2vw), calc(34 / 14 * 100%));
+				font-weight: 400;
+			}
+		}
 	}
 }
+
+.title_services {
+	padding-top: calc(42 / 1170 * 100%);
+}
+
+.services__main-list {
+	@include flex(row, center, space-between, wrap);
+	padding-top: calc(90 / 1170 * 100%);
+	padding-bottom: calc(58 / 1170 * 100%);
+	.services__main-item {
+		@include flex(column, flex-end, center, wrap);
+		width: 33%;
+		@extend %font_Raleway_700;
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3) {
+			margin-bottom: calc(150 / 1170 * 100%);
+		}
+	}
+
+	.services__main-icon {
+		@include flex(row, center, center, wrap);
+		width: 100%;
+		.services__main-icon-wrap {
+			width: 25%;
+			&:hover {
+				@extend %hover_icons;
+			}
+		}
+		.services__main-title {
+			@include fonts_properties(calc(18px + 0.3vw), calc(21 / 18 * 100%));
+			text-transform: uppercase;
+			width: 75%;
+		}
+	}
+	.services__main-discription {
+		@include flex(row, center, flex-start, wrap);
+		width: 75%;
+		.services__main-upper {
+			@include flex(row, center, flex-start, wrap);
+			font-weight: 400;
+			@include fonts_properties(calc(14px + 0.3vw), calc(16 / 14 * 100%));
+			height: calc(45px + 2vw);
+		}
+	}
+}
+
 ._container-footer {
 	height: 100%;
 	max-width: 1170px;
