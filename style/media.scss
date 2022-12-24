@@ -25,7 +25,7 @@
 	}
 
 	.page-first__nav-footer {
-		padding-top: 15vh;
+		padding-top: 10vh;
 	}
 	.page-first__nav-footer-item {
 		width: 15%;
@@ -85,6 +85,18 @@
 			&:nth-child(6) {
 				margin-bottom: calc(150 / 1170 * 100%);
 			}
+		}
+	}
+	.services-categories__main {
+		@include flex(column, center, center, wrap);
+	}
+	.services-categories__main .services-categories-img_wrap,
+	.accordion_mogo {
+		width: 90%;
+	}
+	.accordion_mogo {
+		> div:first-child {
+			margin-top: 25px;
 		}
 	}
 }

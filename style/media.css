@@ -22,7 +22,7 @@
     display: none;
   }
   .page-first__nav-footer {
-    padding-top: 15vh;
+    padding-top: 10vh;
   }
   .page-first__nav-footer-item {
     width: 15%;
@@ -84,5 +84,19 @@
   }
   .services__main-list .services__main-item:nth-child(4), .services__main-list .services__main-item:nth-child(5), .services__main-list .services__main-item:nth-child(6) {
     margin-bottom: 12.8205128205%;
+  }
+  .services-categories__main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .services-categories__main .services-categories-img_wrap,
+.accordion_mogo {
+    width: 90%;
+  }
+  .accordion_mogo > div:first-child {
+    margin-top: 25px;
   }
 }/*# sourceMappingURL=media.css.map */

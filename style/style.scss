@@ -97,7 +97,7 @@
 
 .page-first__nav-footer {
 	padding: 0 15px 0 15px;
-	padding-top: calc(116 / 1170 * 100%);
+	padding-top: calc(78 / 1170 * 100%);
 	width: 100%;
 }
 .page-first__nav-footer-list {
@@ -307,7 +307,7 @@
 		url(./img/bg_devices.jpg) no-repeat;
 	background-size: cover;
 }
-.title {
+.title_devices {
 	padding-top: calc(42 / 1170 * 100%);
 	margin-bottom: calc(59 / 1170 * 100%);
 }
@@ -336,6 +336,49 @@
 
 .devices_container {
 	padding-bottom: calc(30 / 1170 * 100%);
+}
+
+.accordion_mogo {
+	width: 48%;
+	> div {
+		margin-bottom: calc(45 / 1170 * 100%);
+	}
+	> div:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.services-categories__main {
+	@include flex(row, stretch, space-between, wrap);
+	color: #2d3033;
+	padding-bottom: calc(114 / 1170 * 100%);
+	.services-categories-img_wrap {
+		width: 48%;
+		position: relative;
+		padding-bottom: calc(483 / 1170 * 100%);
+		.services-categories-img {
+			@extend %img-adapt;
+		}
+	}
+}
+
+._services-categories-bt {
+	@extend %font_Raleway_700;
+	@include fonts_properties(calc(14px + 0.3vw), calc(16 / 14 * 100%));
+	text-transform: uppercase;
+}
+._services-categories-icon {
+	padding-right: 10px;
+}
+
+._services-categories-bt-wrap {
+	border: 1px solid #c6cbcd;
+}
+
+._services-categories-txt {
+	@extend %font_Raleway_400;
+	@include fonts_properties(calc(13px + 0.3vw), calc(15 / 13 * 100%));
+	margin-bottom: 0;
 }
 
 ._container-footer {
