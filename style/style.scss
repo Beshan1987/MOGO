@@ -235,7 +235,7 @@
 
 		.page-second__footer-item {
 			@include flex(column, center, center, wrap);
-			width: calc(144px + 4vw);
+			width: calc(130px + 4vw);
 			height: calc(124px + 4vw);
 			@extend %font_Raleway_700;
 			border-left: 1px solid #ffffff;
@@ -300,6 +300,42 @@
 			height: calc(45px + 2vw);
 		}
 	}
+}
+
+.devices {
+	background: url(./img/bg_gradient_devices.png),
+		url(./img/bg_devices.jpg) no-repeat;
+	background-size: cover;
+}
+.title {
+	padding-top: calc(42 / 1170 * 100%);
+	margin-bottom: calc(59 / 1170 * 100%);
+}
+
+.devices__main-tablet {
+	padding-bottom: calc(525 / 1170 * 100%);
+	background: url(./img/bg_devices_frame_tablet.png) no-repeat center,
+		url(./img/bg_devices_inner_tablet.png) no-repeat bottom;
+	position: relative;
+	background-size: cover, contain;
+	width: calc(680 / 1170 * 100%);
+	margin: 0 auto;
+	border-radius: calc(5px + 1.5vw);
+	.devices__main-phone {
+		background: url(./img/bg_devices_frame_phone.png) no-repeat center,
+			url(./img/bg_devices_inner_phone.png) no-repeat top;
+		position: absolute;
+		background-size: cover, 97% 97%;
+		border-radius: calc(5px + 1.5vw);
+		width: calc(200 / 680 * 100%);
+		padding-bottom: calc(412 / 680 * 100%);
+		top: calc(216 / 525 * 100%);
+		left: calc(340 / 680 * 100% + 10vw);
+	}
+}
+
+.devices_container {
+	padding-bottom: calc(30 / 1170 * 100%);
 }
 
 ._container-footer {

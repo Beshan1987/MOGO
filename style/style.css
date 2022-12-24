@@ -457,7 +457,7 @@ select {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: calc(144px + 4vw);
+  width: calc(130px + 4vw);
   height: calc(124px + 4vw);
   border-left: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
@@ -535,6 +535,40 @@ select {
   font-size: calc(14px + 0.3vw);
   line-height: 114.2857142857%;
   height: calc(45px + 2vw);
+}
+
+.devices {
+  background: url(./img/bg_gradient_devices.png), url(./img/bg_devices.jpg) no-repeat;
+  background-size: cover;
+}
+
+.title {
+  padding-top: 3.5897435897%;
+  margin-bottom: 5.0427350427%;
+}
+
+.devices__main-tablet {
+  padding-bottom: 44.8717948718%;
+  background: url(./img/bg_devices_frame_tablet.png) no-repeat center, url(./img/bg_devices_inner_tablet.png) no-repeat bottom;
+  position: relative;
+  background-size: cover, contain;
+  width: 58.1196581197%;
+  margin: 0 auto;
+  border-radius: calc(5px + 1.5vw);
+}
+.devices__main-tablet .devices__main-phone {
+  background: url(./img/bg_devices_frame_phone.png) no-repeat center, url(./img/bg_devices_inner_phone.png) no-repeat top;
+  position: absolute;
+  background-size: cover, 97% 97%;
+  border-radius: calc(5px + 1.5vw);
+  width: 29.4117647059%;
+  padding-bottom: 60.5882352941%;
+  top: 41.1428571429%;
+  left: calc(50% + 10vw);
+}
+
+.devices_container {
+  padding-bottom: 2.5641025641%;
 }
 
 ._container-footer {
