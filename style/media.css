@@ -99,4 +99,10 @@
   .accordion_mogo > div:first-child {
     margin-top: 25px;
   }
+  .feedback_cotainer-icon {
+    display: none;
+  }
+  .feedback_cotainer .feedback_cotainer-main {
+    width: 100%;
+  }
 }/*# sourceMappingURL=media.css.map */

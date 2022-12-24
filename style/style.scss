@@ -340,6 +340,7 @@
 
 .services-categories_container {
 	padding-top: calc(42 / 1170 * 100%);
+	margin-bottom: calc(84 / 1170 * 100%);
 }
 
 .accordion_mogo {
@@ -383,6 +384,38 @@
 	@extend %font_Raleway_400;
 	@include fonts_properties(calc(13px + 0.3vw), calc(15 / 13 * 100%));
 	margin-bottom: 0;
+}
+
+.feedback_cotainer {
+	@include flex(row, center, space-between, wrap);
+	width: 80%;
+	margin: 0 auto;
+
+	.feedback_cotainer-icon {
+		width: 20%;
+	}
+	.feedback_cotainer-main {
+		@include flex(column, flex-start, space-between, wrap);
+		width: 75%;
+		@extend %font_Raleway_500;
+		color: #a9afb1;
+		@include fonts_properties(calc(14px + 0.5vw), calc(16 / 14 * 100%));
+		font-style: italic;
+	}
+	.feedback_cotainer-sub {
+		@include flex(row, center, space-between, wrap);
+		width: 40%;
+		padding-top: calc(21 / 1170 * 100%);
+		.feedback_cotainer-line {
+			width: 20%;
+		}
+		.feedback_name {
+			width: 70%;
+			@extend %font_Kaushan_Script_400;
+			color: #000000;
+			@include fonts_properties(calc(18px + 0.8vw), calc(26 / 18 * 100%));
+		}
+	}
 }
 
 ._container-footer {

@@ -157,7 +157,7 @@ select {
   font-weight: 400;
 }
 
-.page-second__main .page-second__main-card .page-second__bg .page-second__reg-wrap {
+.feedback_cotainer .feedback_cotainer-main, .page-second__main .page-second__main-card .page-second__bg .page-second__reg-wrap {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
@@ -175,7 +175,7 @@ select {
   font-weight: 900;
 }
 
-.title-upper, .page-first__main_container .page-first__upper {
+.feedback_cotainer .feedback_cotainer-sub .feedback_name, .title-upper, .page-first__main_container .page-first__upper {
   font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
@@ -584,6 +584,7 @@ select {
 
 .services-categories_container {
   padding-top: 3.5897435897%;
+  margin-bottom: 7.1794871795%;
 }
 
 .accordion_mogo {
@@ -630,6 +631,49 @@ select {
   margin-bottom: 0;
 }
 
+.feedback_cotainer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+.feedback_cotainer .feedback_cotainer-icon {
+  width: 20%;
+}
+.feedback_cotainer .feedback_cotainer-main {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 75%;
+  color: #a9afb1;
+  font-size: calc(14px + 0.5vw);
+  line-height: 114.2857142857%;
+  font-style: italic;
+}
+.feedback_cotainer .feedback_cotainer-sub {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 40%;
+  padding-top: 1.7948717949%;
+}
+.feedback_cotainer .feedback_cotainer-sub .feedback_cotainer-line {
+  width: 20%;
+}
+.feedback_cotainer .feedback_cotainer-sub .feedback_name {
+  width: 70%;
+  color: #000000;
+  font-size: calc(18px + 0.8vw);
+  line-height: 144.4444444444%;
+}
+
 ._container-footer {
   height: 100%;
   max-width: 1170px;
@@ -660,7 +704,7 @@ select {
     font-style: normal;
     font-weight: 400;
   }
-  .page-second__main .page-second__main-card .page-second__bg .page-second__reg-wrap {
+  .page-second__main .page-second__main-card .page-second__bg .page-second__reg-wrap, .feedback_cotainer .feedback_cotainer-main {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 500;
@@ -675,7 +719,7 @@ select {
     font-style: normal;
     font-weight: 900;
   }
-  .page-first__main_container .page-first__upper, .title-upper {
+  .page-first__main_container .page-first__upper, .title-upper, .feedback_cotainer .feedback_cotainer-sub .feedback_name {
     font-family: "Kaushan Script";
     font-style: normal;
     font-weight: 400;
@@ -799,5 +843,11 @@ select {
   }
   .accordion_mogo > div:first-child {
     margin-top: 25px;
+  }
+  .feedback_cotainer-icon {
+    display: none;
+  }
+  .feedback_cotainer .feedback_cotainer-main {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
