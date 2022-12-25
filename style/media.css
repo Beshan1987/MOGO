@@ -112,4 +112,21 @@
   .feedback_cotainer .feedback_cotainer-sub .feedback_cotainer-line {
     width: 20%;
   }
+  .carousel_feedback {
+    width: 93%;
+  }
+  .team__main-wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .team__main-wrap > div {
+    padding-top: 20px;
+  }
+  .team__main-wrap .team__main {
+    min-width: 90%;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=media.css.map */

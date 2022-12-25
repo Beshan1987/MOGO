@@ -114,4 +114,19 @@
 	.feedback_cotainer .feedback_cotainer-sub .feedback_cotainer-line {
 		width: 20%;
 	}
+
+	.carousel_feedback {
+		width: 93%;
+	}
+
+	.team__main-wrap {
+		@include flex(column, center, center, wrap);
+		> div {
+			padding-top: 20px;
+		}
+		.team__main {
+			min-width: 90%;
+			justify-content: center;
+		}
+	}
 }
