@@ -1,5 +1,6 @@
 @import "reset";
 @import "fonts";
+@import "fonts";
 @import "value";
 
 ._container {
@@ -419,9 +420,10 @@
 }
 
 .carousel_feedback {
-	width: 90%;
+	width: 100%;
 	display: flex;
 	margin: 0 auto;
+	padding: 0 5px;
 }
 
 .carousel-control-next-icon {
@@ -432,6 +434,10 @@
 	height: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
+}
+
+.carousel-control-prev {
+	justify-content: flex-start;
 }
 
 .footer_container {
