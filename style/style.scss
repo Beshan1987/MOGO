@@ -405,7 +405,7 @@
 	}
 	.feedback_cotainer-sub {
 		@include flex(row, center, space-between, wrap);
-		width: 40%;
+		width: 60%;
 		padding-top: calc(21 / 1170 * 100%);
 		.feedback_cotainer-line {
 			width: 20%;

@@ -726,7 +726,7 @@ select {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 40%;
+  width: 60%;
   padding-top: 1.7948717949%;
 }
 .feedback_cotainer .feedback_cotainer-sub .feedback_cotainer-line {
@@ -932,6 +932,6 @@ select {
     padding-left: 10px;
   }
   .feedback_cotainer .feedback_cotainer-sub {
-    width: 60%;
+    width: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
