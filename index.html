@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOGO</title>
     <link href="./style/style.css" rel="stylesheet">
-    <link href="./style/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style/bootstrap-5.0.2/dist/scss/bootstrap.css" rel="stylesheet">
 </head>
 
 <body>
@@ -389,7 +389,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleInterval" class="carousel slide carousel_feedback" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="10000">
                                 <div class="feedback_cotainer">
@@ -413,14 +413,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
+                            <button class="carousel-control-prev carousel_feed" type="button"
                                 data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="carousel-control-prev-icon carousel_feedback-icon"
+                                    aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button"
                                 data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="carousel-control-next-icon carousel_feedback-icon"
+                                    aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>

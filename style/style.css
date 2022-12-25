@@ -674,6 +674,16 @@ select {
   line-height: 144.4444444444%;
 }
 
+.carousel_feedback {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.carousel-control-next-icon {
+  background-image: url(./img/arrow_down.svg);
+}
+
 ._container-footer {
   height: 100%;
   max-width: 1170px;

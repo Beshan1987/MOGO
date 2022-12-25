@@ -418,6 +418,16 @@
 	}
 }
 
+.carousel_feedback {
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+}
+
+.carousel-control-next-icon {
+	background-image: $carousel-control-prev-icon-bg;
+}
+
 ._container-footer {
 	height: 100%;
 	max-width: 1170px;
@@ -440,3 +450,5 @@
 }
 
 @import "media";
+
+$carousel-control-prev-icon-bg: url(./img/arrow_down.svg);
