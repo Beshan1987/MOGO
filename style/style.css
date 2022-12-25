@@ -735,7 +735,7 @@ select {
 .feedback_cotainer .feedback_cotainer-sub .feedback_name {
   width: 70%;
   color: #000000;
-  font-size: calc(18px + 0.8vw);
+  font-size: calc(16px + 0.8vw);
   line-height: 144.4444444444%;
 }
 
@@ -932,6 +932,9 @@ select {
     padding-left: 10px;
   }
   .feedback_cotainer .feedback_cotainer-sub {
-    width: 80%;
+    width: 100%;
+  }
+  .feedback_cotainer .feedback_cotainer-sub .feedback_cotainer-line {
+    width: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
