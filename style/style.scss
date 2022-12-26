@@ -516,6 +516,13 @@
 	}
 }
 
+.team__back-and-white-list .team__back-and-white-link {
+	display: flex;
+	.team__back-and-white-img {
+		min-width: 0;
+		flex: 1;
+	}
+}
 ._container-footer {
 	height: 100%;
 	max-width: 1170px;
