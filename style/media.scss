@@ -156,4 +156,60 @@
 			width: 100%;
 		}
 	}
+
+	.works-list .works-item-inner {
+		top: 40%;
+		.works-item-title {
+			display: none;
+		}
+	}
+	.works-wrap {
+		margin: 0 auto;
+		width: 100vw;
+	}
+	.works-list {
+		padding-bottom: 200vw;
+		width: 100vw;
+		.works-item {
+			padding-bottom: 40vw;
+			width: 50vw;
+		}
+		.works-item:nth-child(1) {
+			padding-bottom: 40vw;
+		}
+		.works-item:nth-child(2) {
+			top: 120vw;
+			left: 50vw;
+			padding-bottom: 40vw;
+		}
+		.works-item:nth-child(3) {
+			top: 40vw;
+			left: 0;
+			padding-bottom: 40vw;
+		}
+		.works-item:nth-child(4) {
+			top: 160vw;
+			left: 0vw;
+			width: 100vw;
+			padding-bottom: 40vw;
+			background-position: center;
+		}
+		.works-item:nth-child(5) {
+			padding-bottom: 120vw;
+			top: 0;
+			left: 50vw;
+			width: 50vw;
+		}
+		.works-item:nth-child(6) {
+			top: 120vw;
+			left: 0;
+			padding-bottom: 40vw;
+		}
+		.works-item:nth-child(7) {
+			width: 50vw;
+			top: 80vw;
+			left: 0vw;
+			padding-bottom: 40vw;
+		}
+	}
 }
