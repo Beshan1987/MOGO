@@ -216,7 +216,7 @@ select {
   font-weight: 600;
 }
 
-.grid_container .grid_container-item:nth-child(6) .works-item-inner .works-item-title span:last-child, ._services-categories-txt, .title-main-description, .page-first__nav-footer-item a {
+.people-feedback__main-list .people-feedback__main-item .people-feedback__main-content, .grid_container .grid_container-item:nth-child(6) .works-item-inner .works-item-title span:last-child, ._services-categories-txt, .title-main-description, .page-first__nav-footer-item a {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -961,8 +961,65 @@ select {
   background-size: cover;
 }
 
-.title_people-feedback {
+.people-feedback__main {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 3.5897435897%;
+}
+
+.people-feedback__main-list {
+  width: 49%;
   padding-top: 3.5897435897%;
+}
+.people-feedback__main-list .people-feedback__main-item {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.people-feedback__main-list .people-feedback__main-item .people-feedback__main-img-wrap {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex: 0 1 30%;
+}
+.people-feedback__main-list .people-feedback__main-item .people-feedback__main-content {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 0 1 69%;
+  text-transform: uppercase;
+}
+.people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-name {
+  font-weight: 700;
+  font-size: calc(18px + 0.5vw);
+  line-height: 210%;
+}
+.people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-field {
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: calc(14px + 0.5vw);
+  line-height: 160%;
+  padding-bottom: 8.0894490832%;
+  margin-bottom: 8.0894490832%;
+  background: url(./img/feedback_underline.png) no-repeat bottom left;
+}
+.people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-about {
+  font-size: calc(14px + 0.4vw);
+  line-height: 114.2857142857%;
+  text-transform: none;
+  padding: 5.055905677% 0;
 }
 
 ._container-footer {
@@ -990,7 +1047,7 @@ select {
     font-style: normal;
     font-weight: 600;
   }
-  .page-first__nav-footer-item a, .title-main-description, ._services-categories-txt, .grid_container .grid_container-item:nth-child(6) .works-item-inner .works-item-title span:last-child {
+  .page-first__nav-footer-item a, .title-main-description, ._services-categories-txt, .grid_container .grid_container-item:nth-child(6) .works-item-inner .works-item-title span:last-child, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
@@ -1213,5 +1270,35 @@ select {
     grid-row: 5/6;
     padding-bottom: 50%;
     background-position: center;
+  }
+  .people-feedback__main-list {
+    width: 90%;
+  }
+  .people-feedback__main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .people-feedback__main-list .people-feedback__main-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-about {
+    text-align: center;
+  }
+  .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-field {
+    background: url(./img/feedback_underline.png) no-repeat bottom center;
   }
 }/*# sourceMappingURL=style.css.map */

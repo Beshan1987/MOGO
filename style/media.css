@@ -179,4 +179,34 @@
     padding-bottom: 50%;
     background-position: center;
   }
+  .people-feedback__main-list {
+    width: 90%;
+  }
+  .people-feedback__main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .people-feedback__main-list .people-feedback__main-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-about {
+    text-align: center;
+  }
+  .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-field {
+    background: url(./img/feedback_underline.png) no-repeat bottom center;
+  }
 }/*# sourceMappingURL=media.css.map */

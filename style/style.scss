@@ -621,8 +621,44 @@
 		url(./img/bg_people_comm.jpg) no-repeat;
 	background-size: cover;
 }
-.title_people-feedback {
+
+.people-feedback__main {
+	@include flex(row, stretch, space-between, wrap);
+	padding-bottom: calc(42 / 1170 * 100%);
+}
+.people-feedback__main-list {
+	width: 49%;
 	padding-top: calc(42 / 1170 * 100%);
+
+	.people-feedback__main-item {
+		@include flex(row, stretch, space-between, wrap);
+		.people-feedback__main-img-wrap {
+			@include flex(column, flex-start, flex-start, wrap);
+			flex: 0 1 30%;
+		}
+		.people-feedback__main-content {
+			@include flex(column, stretch, space-between, wrap);
+			flex: 0 1 69%;
+			@extend %font_Raleway_400;
+			text-transform: uppercase;
+			.people-feedback__main-name {
+				font-weight: 700;
+				@include fonts_properties(calc(18px + 0.5vw), calc(21 / 10 * 100%));
+			}
+			.people-feedback__main-field {
+				@include flex(column, stretch, flex-start, wrap);
+				@include fonts_properties(calc(14px + 0.5vw), calc(16 / 10 * 100%));
+				padding-bottom: calc(32 / (1170 * (0.49 * 0.69)) * 100%);
+				margin-bottom: calc(32 / (1170 * (0.49 * 0.69)) * 100%);
+				background: url(./img/feedback_underline.png) no-repeat bottom left;
+			}
+			.people-feedback__main-about {
+				@include fonts_properties(calc(14px + 0.4vw), calc(16 / 14 * 100%));
+				text-transform: none;
+				padding: calc(20 / (1170 * (0.49 * 0.69)) * 100%) 0;
+			}
+		}
+	}
 }
 
 ._container-footer {

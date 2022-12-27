@@ -183,4 +183,28 @@
 			background-position: center;
 		}
 	}
+
+	.people-feedback__main-list {
+		width: 90%;
+	}
+	.people-feedback__main {
+		@include flex(column, center, space-between, wrap);
+	}
+	.people-feedback__main-list .people-feedback__main-item {
+		@include flex(column, center, center, wrap);
+	}
+	.people-feedback__main-list
+		.people-feedback__main-item
+		.people-feedback__main-content {
+		@include flex(column, center, center, wrap);
+		.people-feedback__main-about {
+			text-align: center;
+		}
+	}
+	.people-feedback__main-list
+		.people-feedback__main-item
+		.people-feedback__main-content
+		.people-feedback__main-field {
+		background: url(./img/feedback_underline.png) no-repeat bottom center;
+	}
 }
