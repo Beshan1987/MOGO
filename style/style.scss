@@ -432,6 +432,7 @@
 .team__main-wrap {
 	@include flex(row, center, space-between, wrap);
 	width: 100%;
+	margin-bottom: calc(84 / 1170 * 100%);
 	.team__main {
 		width: calc(370 / 1170 * 100%);
 		.team__main-bg-face {
@@ -503,10 +504,12 @@
 	margin-bottom: calc(42 / 1170 * 100%);
 }
 
+.team__back-and-white-container {
+	background: #f8f8f8;
+}
 .team__back-and-white-list {
 	@include flex(row, center, space-between, wrap);
-	padding-top: calc(84 / 1170 * 100%);
-	margin-bottom: calc(84 / 1170 * 100%);
+	padding: calc(25 / 1170 * 100%) 0;
 	.team__back-and-white-item {
 		width: 15%;
 		@include flex(row, center, center, wrap);
@@ -526,40 +529,42 @@
 
 .title_works {
 	margin-bottom: calc(42 / 1170 * 100%);
+	padding-top: calc(50 / 1170 * 100%);
 }
 
-.works-list {
-	padding-bottom: 50vw;
-	position: relative;
-	width: 100vw;
-	.works-item {
-		padding-bottom: 25vw;
-		width: 25vw;
-		position: absolute;
+.grid_container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	.grid_container-item {
+		padding-bottom: 100%;
 	}
-	.works-item:nth-child(1) {
+	.grid_container-item:nth-child(1) {
 		background: url(./img/works_hoody.png) no-repeat;
 		background-size: cover;
 	}
-	.works-item:nth-child(2) {
+	.grid_container-item:nth-child(2) {
 		background: url(./img/works_pyramid.png) no-repeat;
 		background-size: cover;
-		top: 0;
-		left: 25vw;
 	}
-	.works-item:nth-child(3) {
+	.grid_container-item:nth-child(3) {
+		grid-column: 3/4;
+		grid-row: 1/3;
+		background: url(./img/works_sand.png) no-repeat;
+		background-size: cover;
+	}
+	.grid_container-item:nth-child(4) {
+		background: url(./img/works_home.png) no-repeat;
+		background-size: cover;
+	}
+	.grid_container-item:nth-child(5) {
 		background: url(./img/works_windows.png) no-repeat;
 		background-size: cover;
-		top: 25vw;
-		left: 0;
 	}
-	.works-item:nth-child(4) {
+	.grid_container-item:nth-child(6) {
 		background: url(./img/works_column.png) no-repeat;
 		background-size: cover;
-		top: 25vw;
-		left: 25vw;
-		transition: 0.8s;
-
+		position: relative;
 		&:hover {
 			background: url(./img/works_orange.png) no-repeat,
 				url(./img/works_column.png) no-repeat;
@@ -570,60 +575,42 @@
 			opacity: 1;
 			transition: 0.8s;
 		}
+		.works-item-inner {
+			position: absolute;
+			@include flex(column, center, center, wrap);
+			color: #ffffff;
+			top: calc(40% - 90px / 2);
+			left: 0;
+			width: 100%;
+			opacity: 0;
+			transition: 0.8s;
+			.works-item-icon-wrap {
+				display: flex;
+				width: calc(20px + 3vw);
+				.works-item-icon {
+					min-width: 0;
+					flex: 1;
+				}
+			}
+			.works-item-title {
+				@include flex(column, center, center, wrap);
+				padding-top: calc(42 / 360 * 100%);
+				span:first-child {
+					@extend %font_Raleway_700;
+					@include fonts_properties(calc(8px + 1.3vw), calc(21 / 10 * 100%));
+					text-transform: uppercase;
+				}
+				span:last-child {
+					@extend %font_Raleway_400;
+					@include fonts_properties(calc(6px + 1.2vw), calc(16 / 14 * 100%));
+					text-transform: uppercase;
+				}
+			}
+		}
 	}
-	.works-item:nth-child(5) {
-		background: url(./img/works_sand.png) no-repeat;
-		background-size: cover;
-		padding-bottom: 50vw;
-		width: 25vw;
-		top: 0;
-		left: 50vw;
-	}
-	.works-item:nth-child(6) {
-		background: url(./img/works_home.png) no-repeat;
-		background-size: cover;
-		top: 0;
-		left: 75vw;
-	}
-	.works-item:nth-child(7) {
+	.grid_container-item:nth-child(7) {
 		background: url(./img/works_column2.png) no-repeat;
 		background-size: cover;
-		padding-bottom: 25vw;
-		width: 25vw;
-		top: 25vw;
-		left: 75vw;
-	}
-
-	.works-item-inner {
-		position: absolute;
-		@include flex(column, center, center, wrap);
-		color: #ffffff;
-		top: calc(50% - 90px / 2);
-		width: 100%;
-		opacity: 0;
-		transition: 0.8s;
-		.works-item-icon-wrap {
-			display: flex;
-			width: calc(20px + 3vw);
-			.works-item-icon {
-				min-width: 0;
-				flex: 1;
-			}
-		}
-		.works-item-title {
-			@include flex(column, center, center, wrap);
-			padding-top: calc(42 / 360 * 100%);
-			span:first-child {
-				@extend %font_Raleway_700;
-				@include fonts_properties(calc(8px + 1.3vw), calc(21 / 10 * 100%));
-				text-transform: uppercase;
-			}
-			span:last-child {
-				@extend %font_Raleway_400;
-				@include fonts_properties(calc(6px + 1.2vw), calc(16 / 14 * 100%));
-				text-transform: uppercase;
-			}
-		}
 	}
 }
 
