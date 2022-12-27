@@ -869,6 +869,7 @@ select {
 .grid_container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 10.7692307692%;
 }
 .grid_container .grid_container-item {
   padding-bottom: 100%;
@@ -952,6 +953,16 @@ select {
 .grid_container .grid_container-item:nth-child(7) {
   background: url(./img/works_column2.png) no-repeat;
   background-size: cover;
+}
+
+.people-feedback {
+  margin-top: 7.1794871795%;
+  background: url(./img/bg_people_fog.png) no-repeat, url(./img/bg_people_comm.jpg) no-repeat;
+  background-size: cover;
+}
+
+.title_people-feedback {
+  padding-top: 3.5897435897%;
 }
 
 ._container-footer {

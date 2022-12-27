@@ -535,6 +535,7 @@
 .grid_container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	margin-bottom: calc(126 / 1170 * 100%);
 
 	.grid_container-item {
 		padding-bottom: 100%;
@@ -612,6 +613,16 @@
 		background: url(./img/works_column2.png) no-repeat;
 		background-size: cover;
 	}
+}
+
+.people-feedback {
+	margin-top: calc(84 / 1170 * 100%);
+	background: url(./img/bg_people_fog.png) no-repeat,
+		url(./img/bg_people_comm.jpg) no-repeat;
+	background-size: cover;
+}
+.title_people-feedback {
+	padding-top: calc(42 / 1170 * 100%);
 }
 
 ._container-footer {
