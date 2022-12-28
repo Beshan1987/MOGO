@@ -209,4 +209,20 @@
   .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-field {
     background: url(./img/feedback_underline.png) no-repeat bottom center;
   }
+  .people-feedback {
+    margin-top: 7.1794871795%;
+    background: url(./img/bg_people_fog.png) no-repeat, url(./img/bg_feedback_small.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .stories__main-list .stories__main-item {
+    flex: 1 1 90%;
+  }
+  .stories__main-list .stories__main-item .stories__img-wrap::after,
+.stories__main-list .stories__main-item .stories__img-wrap::before {
+    left: 0;
+    width: 6.3627730294%;
+    line-height: 120%;
+    min-width: 67px;
+  }
 }/*# sourceMappingURL=media.css.map */

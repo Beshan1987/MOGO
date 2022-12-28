@@ -571,6 +571,7 @@
 				url(./img/works_column.png) no-repeat;
 			background-size: cover;
 			transition: 0.8s;
+			@extend %hover_links;
 		}
 		&:hover .works-item-inner {
 			opacity: 1;
@@ -656,6 +657,86 @@
 				@include fonts_properties(calc(14px + 0.4vw), calc(16 / 14 * 100%));
 				text-transform: none;
 				padding: calc(20 / (1170 * (0.49 * 0.69)) * 100%) 0;
+			}
+		}
+	}
+}
+
+.title_stories {
+	padding-top: calc(84 / 1170 * 100%);
+	margin-bottom: calc(42 / 1170 * 100%);
+}
+
+.stories__main-list {
+	@include flex(row, stretch, space-between, wrap);
+	flex: 1 1 100%;
+	.stories__main-item {
+		@include flex(column, stretch, space-between, wrap);
+		flex: 0 1 32%;
+		margin-right: calc(10 / 1170 * 100%);
+		&:last-child {
+			margin-right: 0;
+		}
+		.stories__img-wrap {
+			position: relative;
+			padding-bottom: calc(253 / (1170 * 0.33) * 100%);
+			.stories__img {
+				@extend %img-adapt;
+			}
+			&::before {
+				content: "15";
+				position: absolute;
+				background: #95e1d3;
+				z-index: 2;
+				@extend %font_Raleway_700;
+				@include fonts_properties(calc(24px + 0.3vw), calc(24 / 22 * 100%));
+				width: calc(80 / 370 * 100%);
+				height: calc(42 / 253 * 100%);
+				@include flex(column, center, flex-end, wrap);
+				color: #ffffff;
+				top: calc(148 / 253 * 100%);
+				left: calc(-14 / 370 * 100%);
+			}
+			&::after {
+				content: "JAN";
+				position: absolute;
+				background: #95e1d3;
+				z-index: 2;
+				@extend %font_Raleway_700;
+				font-weight: 400;
+				@include fonts_properties(calc(12px + 0.3vw), calc(15 / 8 * 100%));
+				width: calc(80 / 370 * 100%);
+				height: calc(42 / 253 * 100%);
+				@include flex(column, center, flex-start, wrap);
+				color: #ffffff;
+				top: calc(188 / 253 * 100%);
+				left: calc(-14 / 370 * 100%);
+			}
+		}
+		.stories__txt {
+			@include flex(column, stretch, space-between, wrap);
+			padding-top: calc(30 / (1170 * 0.33) * 100%);
+			.stories__title {
+				@extend %font_Raleway_700;
+				@include fonts_properties(calc(18px + 0.4vw), calc(21 / 18 * 100%));
+				text-transform: uppercase;
+			}
+
+			.stories__article {
+				@extend %font_Raleway_400;
+				@include fonts_properties(calc(13px + 0.4vw), calc(16 / 14 * 100%));
+			}
+		}
+		.stories__statistic-list {
+			@include flex(row, stretch, stretch, wrap);
+			.stories__statistic-item {
+				@include flex(row, center, stretch, wrap);
+				flex: 0 1 40%;
+				.stories__statistic-scores {
+					padding-left: calc(30 / (1170 * 0.33) * 100%);
+					@extend %font_Raleway_400;
+					@include fonts_properties(calc(12px + 0.1vw), calc(14 / 12 * 100%));
+				}
 			}
 		}
 	}
