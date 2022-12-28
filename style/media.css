@@ -217,6 +217,7 @@
   }
   .stories__main-list .stories__main-item {
     flex: 1 1 90%;
+    padding: 0 10px;
   }
   .stories__main-list .stories__main-item .stories__img-wrap::after,
 .stories__main-list .stories__main-item .stories__img-wrap::before {
@@ -224,5 +225,10 @@
     width: 6.3627730294%;
     line-height: 120%;
     min-width: 67px;
+  }
+  .title_last {
+    background: url(./img/bg_last_fog.png), url(./img/bg_last_small.png);
+    background-size: cover;
+    background-position: center;
   }
 }/*# sourceMappingURL=media.css.map */

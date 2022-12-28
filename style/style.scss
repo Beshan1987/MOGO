@@ -670,6 +670,7 @@
 .stories__main-list {
 	@include flex(row, stretch, space-between, wrap);
 	flex: 1 1 100%;
+	margin-bottom: calc(84 / 1170 * 100%);
 	.stories__main-item {
 		@include flex(column, stretch, space-between, wrap);
 		flex: 0 1 32%;
@@ -742,6 +743,21 @@
 	}
 }
 
+.title-upper_stories {
+	@include flex(column, center, center, wrap);
+}
+.title-main_last {
+	color: #f38281;
+	margin-bottom: 2vw;
+}
+.title_last {
+	padding: 42px 0;
+	background: url(./img/bg_last_fog.png), url(./img/bg_last_main.jpg);
+	background-size: cover;
+}
+.title-underline_last {
+	@include flex(column, center, center, wrap);
+}
 ._container-footer {
 	height: 100%;
 	max-width: 1170px;
