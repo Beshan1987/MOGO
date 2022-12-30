@@ -840,6 +840,9 @@
 				display: grid;
 				grid-template-columns: repeat(8, 1fr);
 				align-items: center;
+				.footer_socials-item:hover {
+					@extend %hover_icons;
+				}
 			}
 		}
 		.footer__reg {
@@ -935,10 +938,15 @@
 		@include fonts_properties(calc(12px + 0.5vw), calc(14 / 12 * 100%));
 		color: #2d3033;
 		padding-top: 10px;
+		text-transform: uppercase;
 		&:hover {
 			@extend %hover_links;
 		}
 	}
+}
+
+.footer-list .footer_item .footer_socials {
+	padding-top: 5px;
 }
 
 @import "media";
