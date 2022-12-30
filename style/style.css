@@ -258,13 +258,13 @@ select {
   font-weight: 400;
 }
 
-.footer__instagram-all .footer__instagram-link:hover, .grid_container .grid_container-item:nth-child(6):hover, .team__main-sub .team__main-prof:hover, .team__main-sub .team__main-name:hover, .page-second__footer .page-second__footer-wrap .page-second__footer-item span:first-child:hover, .page-first__nav_container .page-first__nav .page-first__nav-link:hover {
+.footer__instagram-all .footer__instagram-link:hover, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-name:hover, .grid_container .grid_container-item:nth-child(6):hover, .team__main-sub .team__main-prof:hover, .team__main-sub .team__main-name:hover, .page-second__footer .page-second__footer-wrap .page-second__footer-item span:first-child:hover, .page-first__nav_container .page-first__nav .page-first__nav-link:hover {
   color: #e4be8d;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.team__back-and-white-list .team__back-and-white-item .team__back-and-white-link:hover, .services__main-list .services__main-icon .services__main-icon-wrap:hover, .page-first__nav_container .page-first__nav .page-first__nav-icons > :hover, .page-first__nav_container .nav-logo_wrap:hover {
+.footer__instagram-list .footer__instagram-img-wrap :hover, .footer-list .footer_item .footer__blogs-list .footer__blogs-img-wrap :hover, .footer-list .footer_item .footer__reg .footer_bt .footer_logo:hover, .footer-list .footer_item .footer_logo:hover, .title-upper_stories :hover, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores:hover, .stories__main-list .stories__main-item .stories__img-wrap .stories__img:hover, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-img-wrap:hover, .team__back-and-white-list .team__back-and-white-item .team__back-and-white-link:hover, .services__main-list .services__main-icon .services__main-icon-wrap:hover, .page-first__nav_container .page-first__nav .page-first__nav-icons > :hover, .page-first__nav_container .nav-logo_wrap:hover {
   transition: 0.5s;
   opacity: 0.8;
   cursor: pointer;
@@ -1138,7 +1138,6 @@ select {
   font-size: calc(12px + 0.1vw);
   line-height: 116.6666666667%;
 }
-
 .title-upper_stories {
   display: flex;
   flex-flow: column;
@@ -1146,7 +1145,6 @@ select {
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .title-main_last {
   color: #f38281;
   margin-bottom: 2vw;
@@ -1392,12 +1390,12 @@ select {
     font-style: normal;
     font-weight: 400;
   }
-  .page-first__nav_container .page-first__nav .page-first__nav-link:hover, .page-second__footer .page-second__footer-wrap .page-second__footer-item span:first-child:hover, .team__main-sub .team__main-name:hover, .team__main-sub .team__main-prof:hover, .grid_container .grid_container-item:nth-child(6):hover, .footer__instagram-all .footer__instagram-link:hover {
+  .page-first__nav_container .page-first__nav .page-first__nav-link:hover, .page-second__footer .page-second__footer-wrap .page-second__footer-item span:first-child:hover, .team__main-sub .team__main-name:hover, .team__main-sub .team__main-prof:hover, .grid_container .grid_container-item:nth-child(6):hover, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content .people-feedback__main-name:hover, .footer__instagram-all .footer__instagram-link:hover {
     color: #e4be8d;
     transition: 0.5s;
     cursor: pointer;
   }
-  .page-first__nav_container .nav-logo_wrap:hover, .page-first__nav_container .page-first__nav .page-first__nav-icons > :hover, .services__main-list .services__main-icon .services__main-icon-wrap:hover, .team__back-and-white-list .team__back-and-white-item .team__back-and-white-link:hover {
+  .page-first__nav_container .nav-logo_wrap:hover, .page-first__nav_container .page-first__nav .page-first__nav-icons > :hover, .services__main-list .services__main-icon .services__main-icon-wrap:hover, .team__back-and-white-list .team__back-and-white-item .team__back-and-white-link:hover, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-img-wrap:hover, .stories__main-list .stories__main-item .stories__img-wrap .stories__img:hover, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores:hover, .title-upper_stories :hover, .footer-list .footer_item .footer_logo:hover, .footer-list .footer_item .footer__reg .footer_bt .footer_logo:hover, .footer-list .footer_item .footer__blogs-list .footer__blogs-img-wrap :hover, .footer__instagram-list .footer__instagram-img-wrap :hover {
     transition: 0.5s;
     opacity: 0.8;
     cursor: pointer;
@@ -1664,6 +1662,9 @@ select {
   }
   .footer-list .footer_item {
     margin-right: 0;
+  }
+  .footer-list .footer_item .footer_socials {
+    padding-top: 5px;
   }
 }
 @media (max-width: 1000px) {

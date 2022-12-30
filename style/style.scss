@@ -636,6 +636,9 @@
 		.people-feedback__main-img-wrap {
 			@include flex(column, flex-start, flex-start, wrap);
 			flex: 0 1 30%;
+			&:hover {
+				@extend %hover_icons;
+			}
 		}
 		.people-feedback__main-content {
 			@include flex(column, stretch, space-between, wrap);
@@ -645,6 +648,9 @@
 			.people-feedback__main-name {
 				font-weight: 700;
 				@include fonts_properties(calc(18px + 0.5vw), calc(21 / 10 * 100%));
+				&:hover {
+					@extend %hover_links;
+				}
 			}
 			.people-feedback__main-field {
 				@include flex(column, stretch, flex-start, wrap);
@@ -683,6 +689,9 @@
 			padding-bottom: calc(253 / (1170 * 0.33) * 100%);
 			.stories__img {
 				@extend %img-adapt;
+				&:hover {
+					@extend %hover_icons;
+				}
 			}
 			&::before {
 				content: "15";
@@ -737,6 +746,9 @@
 					padding-left: calc(30 / (1170 * 0.33) * 100%);
 					@extend %font_Raleway_400;
 					@include fonts_properties(calc(12px + 0.1vw), calc(14 / 12 * 100%));
+					&:hover {
+						@extend %hover_icons;
+					}
 				}
 			}
 		}
@@ -745,6 +757,9 @@
 
 .title-upper_stories {
 	@include flex(column, center, center, wrap);
+	:hover {
+		@extend %hover_icons;
+	}
 }
 .title-main_last {
 	color: #f38281;
@@ -785,6 +800,10 @@
 			flex: 0 1 26%;
 			justify-content: stretch;
 		}
+		.footer_logo:hover {
+			@extend %hover_icons;
+		}
+
 		.footer_description {
 			@include fonts_properties(calc(14px + 0.3vw), calc(16 / 12 * 100%));
 			color: #c6cbcd;
@@ -847,6 +866,9 @@
 				@extend %font_Raleway_700;
 				@include fonts_properties(calc(14px + 0.5vw), calc(16 / 6 * 100%));
 				color: #ffffff;
+				.footer_logo:hover {
+					@extend %hover_icons;
+				}
 			}
 		}
 		.footer__blogs-list {
@@ -856,6 +878,9 @@
 				width: 43%;
 				padding-bottom: calc(120 / (1170 * 0.43) * 100%);
 				margin-bottom: 10px;
+				:hover {
+					@extend %hover_icons;
+				}
 				.footer__blogs-img {
 					@extend %img-adapt;
 				}
@@ -896,6 +921,9 @@
 		padding-bottom: calc(88 / 90 * 100%);
 		.footer__istagram-img {
 			@extend %img-adapt;
+		}
+		:hover {
+			@extend %hover_icons;
 		}
 	}
 }
