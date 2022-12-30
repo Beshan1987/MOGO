@@ -228,7 +228,7 @@ select {
   font-weight: 400;
 }
 
-.footer-list .footer_item .footer__blogs-list .footer__blogs-item .footer__blogs-sub, .footer-list .footer_item .footer__reg .footer_mail::placeholder, .footer-list .footer_item .footer_socials .footer_social-txt, .footer-list .footer_item, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores, .stories__main-list .stories__main-item .stories__txt .stories__article, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content, .grid_container .grid_container-item:nth-child(6) .works-item-inner .works-item-title span:last-child, ._services-categories-txt, .title-main-description, .page-first__nav-footer-item a {
+.footer__instagram-all .footer__instagram-link, .footer-list .footer_item .footer__blogs-list .footer__blogs-item .footer__blogs-sub, .footer-list .footer_item .footer__reg .footer_mail::placeholder, .footer-list .footer_item .footer_socials .footer_social-txt, .footer-list .footer_item, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores, .stories__main-list .stories__main-item .stories__txt .stories__article, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content, .grid_container .grid_container-item:nth-child(6) .works-item-inner .works-item-title span:last-child, ._services-categories-txt, .title-main-description, .page-first__nav-footer-item a {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -258,7 +258,7 @@ select {
   font-weight: 400;
 }
 
-.grid_container .grid_container-item:nth-child(6):hover, .team__main-sub .team__main-prof:hover, .team__main-sub .team__main-name:hover, .page-second__footer .page-second__footer-wrap .page-second__footer-item span:first-child:hover, .page-first__nav_container .page-first__nav .page-first__nav-link:hover {
+.footer__instagram-all .footer__instagram-link:hover, .grid_container .grid_container-item:nth-child(6):hover, .team__main-sub .team__main-prof:hover, .team__main-sub .team__main-name:hover, .page-second__footer .page-second__footer-wrap .page-second__footer-item span:first-child:hover, .page-first__nav_container .page-first__nav .page-first__nav-link:hover {
   color: #e4be8d;
   transition: 0.5s;
   cursor: pointer;
@@ -1345,7 +1345,12 @@ select {
   justify-content: center;
   flex-wrap: wrap;
 }
-
+.footer__instagram-all .footer__instagram-link {
+  font-size: calc(12px + 0.5vw);
+  line-height: 116.6666666667%;
+  color: #2d3033;
+  padding-top: 10px;
+}
 @media (max-width: 700px) {
   .page-first__nav_container .page-first__nav .page-first__nav-link {
     font-family: "Raleway";
@@ -1362,7 +1367,7 @@ select {
     font-style: normal;
     font-weight: 400;
   }
-  .page-first__nav-footer-item a, .title-main-description, ._services-categories-txt, .grid_container .grid_container-item:nth-child(6) .works-item-inner .works-item-title span:last-child, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content, .stories__main-list .stories__main-item .stories__txt .stories__article, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores, .footer-list .footer_item, .footer-list .footer_item .footer_socials .footer_social-txt, .footer-list .footer_item .footer__reg .footer_mail::placeholder, .footer-list .footer_item .footer__blogs-list .footer__blogs-item .footer__blogs-sub {
+  .page-first__nav-footer-item a, .title-main-description, ._services-categories-txt, .grid_container .grid_container-item:nth-child(6) .works-item-inner .works-item-title span:last-child, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-content, .stories__main-list .stories__main-item .stories__txt .stories__article, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores, .footer-list .footer_item, .footer-list .footer_item .footer_socials .footer_social-txt, .footer-list .footer_item .footer__reg .footer_mail::placeholder, .footer-list .footer_item .footer__blogs-list .footer__blogs-item .footer__blogs-sub, .footer__instagram-all .footer__instagram-link {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 400;
@@ -1387,7 +1392,7 @@ select {
     font-style: normal;
     font-weight: 400;
   }
-  .page-first__nav_container .page-first__nav .page-first__nav-link:hover, .page-second__footer .page-second__footer-wrap .page-second__footer-item span:first-child:hover, .team__main-sub .team__main-name:hover, .team__main-sub .team__main-prof:hover, .grid_container .grid_container-item:nth-child(6):hover {
+  .page-first__nav_container .page-first__nav .page-first__nav-link:hover, .page-second__footer .page-second__footer-wrap .page-second__footer-item span:first-child:hover, .team__main-sub .team__main-name:hover, .team__main-sub .team__main-prof:hover, .grid_container .grid_container-item:nth-child(6):hover, .footer__instagram-all .footer__instagram-link:hover {
     color: #e4be8d;
     transition: 0.5s;
     cursor: pointer;
@@ -1648,7 +1653,8 @@ select {
   .footer-list .footer__blogs {
     text-align: center;
   }
-  .footer-list .footer_item:nth-child(1) {
+  .footer-list .footer_item:nth-child(1),
+.footer__instagram-all .footer__instagram-link {
     text-align: center;
   }
   .footer-list .footer_item:nth-child(1),

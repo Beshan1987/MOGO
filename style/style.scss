@@ -902,6 +902,15 @@
 .footer__instagram-all {
 	flex: 1;
 	@include flex(column, stretch, center, wrap);
+	.footer__instagram-link {
+		@extend %font_Raleway_400;
+		@include fonts_properties(calc(12px + 0.5vw), calc(14 / 12 * 100%));
+		color: #2d3033;
+		padding-top: 10px;
+		&:hover {
+			@extend %hover_links;
+		}
+	}
 }
 
 @import "media";
