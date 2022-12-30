@@ -870,8 +870,9 @@
 				@include fonts_properties(calc(14px + 0.3vw), calc(16 / 6 * 100%));
 				color: #ffffff;
 				text-transform: uppercase;
-				.footer_logo:hover {
+				&:hover {
 					@extend %hover_icons;
+					background: #5c958a;
 				}
 			}
 		}

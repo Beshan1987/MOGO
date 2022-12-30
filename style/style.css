@@ -264,7 +264,7 @@ select {
   cursor: pointer;
 }
 
-.footer__instagram-list .footer__instagram-img-wrap :hover, .footer-list .footer_item .footer__blogs-list .footer__blogs-img-wrap :hover, .footer-list .footer_item .footer__reg .footer_bt .footer_logo:hover, .footer-list .footer_item .footer_socials .footer_socials-list .footer_socials-item:hover, .footer-list .footer_item .footer_logo:hover, .title-upper_stories :hover, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores:hover, .stories__main-list .stories__main-item .stories__img-wrap .stories__img:hover, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-img-wrap:hover, .team__back-and-white-list .team__back-and-white-item .team__back-and-white-link:hover, .services__main-list .services__main-icon .services__main-icon-wrap:hover, .page-first__nav_container .page-first__nav .page-first__nav-icons > :hover, .page-first__nav_container .nav-logo_wrap:hover {
+.footer__instagram-list .footer__instagram-img-wrap :hover, .footer-list .footer_item .footer__blogs-list .footer__blogs-img-wrap :hover, .footer-list .footer_item .footer__reg .footer_bt:hover, .footer-list .footer_item .footer_socials .footer_socials-list .footer_socials-item:hover, .footer-list .footer_item .footer_logo:hover, .title-upper_stories :hover, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores:hover, .stories__main-list .stories__main-item .stories__img-wrap .stories__img:hover, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-img-wrap:hover, .team__back-and-white-list .team__back-and-white-item .team__back-and-white-link:hover, .services__main-list .services__main-icon .services__main-icon-wrap:hover, .page-first__nav_container .page-first__nav .page-first__nav-icons > :hover, .page-first__nav_container .nav-logo_wrap:hover {
   transition: 0.5s;
   opacity: 0.8;
   cursor: pointer;
@@ -1282,6 +1282,9 @@ select {
   color: #ffffff;
   text-transform: uppercase;
 }
+.footer-list .footer_item .footer__reg .footer_bt:hover {
+  background: #5c958a;
+}
 .footer-list .footer_item .footer__blogs-list {
   display: flex;
   flex-flow: row;
@@ -1408,7 +1411,7 @@ select {
     transition: 0.5s;
     cursor: pointer;
   }
-  .page-first__nav_container .nav-logo_wrap:hover, .page-first__nav_container .page-first__nav .page-first__nav-icons > :hover, .services__main-list .services__main-icon .services__main-icon-wrap:hover, .team__back-and-white-list .team__back-and-white-item .team__back-and-white-link:hover, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-img-wrap:hover, .stories__main-list .stories__main-item .stories__img-wrap .stories__img:hover, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores:hover, .title-upper_stories :hover, .footer-list .footer_item .footer_logo:hover, .footer-list .footer_item .footer_socials .footer_socials-list .footer_socials-item:hover, .footer-list .footer_item .footer__reg .footer_bt .footer_logo:hover, .footer-list .footer_item .footer__blogs-list .footer__blogs-img-wrap :hover, .footer__instagram-list .footer__instagram-img-wrap :hover {
+  .page-first__nav_container .nav-logo_wrap:hover, .page-first__nav_container .page-first__nav .page-first__nav-icons > :hover, .services__main-list .services__main-icon .services__main-icon-wrap:hover, .team__back-and-white-list .team__back-and-white-item .team__back-and-white-link:hover, .people-feedback__main-list .people-feedback__main-item .people-feedback__main-img-wrap:hover, .stories__main-list .stories__main-item .stories__img-wrap .stories__img:hover, .stories__main-list .stories__main-item .stories__statistic-list .stories__statistic-item .stories__statistic-scores:hover, .title-upper_stories :hover, .footer-list .footer_item .footer_logo:hover, .footer-list .footer_item .footer_socials .footer_socials-list .footer_socials-item:hover, .footer-list .footer_item .footer__reg .footer_bt:hover, .footer-list .footer_item .footer__blogs-list .footer__blogs-img-wrap :hover, .footer__instagram-list .footer__instagram-img-wrap :hover {
     transition: 0.5s;
     opacity: 0.8;
     cursor: pointer;
