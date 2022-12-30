@@ -231,4 +231,41 @@
 		background-size: cover;
 		background-position: center;
 	}
+
+	.footer-list {
+		@include flex(column, center, center, wrap);
+	}
+	.footer-list .footer__blogs {
+		text-align: center;
+	}
+
+	.footer-list .footer_item:nth-child(1) {
+		text-align: center;
+	}
+	.footer-list .footer_item:nth-child(1),
+	.footer-list .footer_item:nth-child(2),
+	.footer-list .footer_item:nth-child(3) {
+		width: 70%;
+	}
+	.footer-list .footer_item {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.footer-list {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+	.footer-list .footer_item:nth-child(1),
+	.footer-list .footer_item:nth-child(2),
+	.footer-list .footer_item:nth-child(3) {
+		width: 90%;
+		min-width: 256px;
+		flex: 1 1 40%;
+	}
+	.footer-list .footer_item:nth-child(3) {
+		width: 90%;
+		flex: 0 1 40%;
+	}
 }

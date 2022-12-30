@@ -759,24 +759,149 @@
 	@include flex(column, center, center, wrap);
 }
 ._container-footer {
-	height: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
-.footer_container {
-	.footer_rights {
-		text-align: center;
-		border-top: 1px solid #c6cbcd;
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 700;
-		font-size: 13px;
-		line-height: 50px;
-		height: 50px;
-		text-transform: uppercase;
-		color: #2d3033;
+.footer-list {
+	color: #2d3033;
+	@include flex(row, stretch, stretch, nowrap);
+	margin-bottom: calc(42 / 1170 * 100%);
+	flex: 1 1 auto;
+	padding: 0 5px;
+	.footer_item {
+		@include flex(column, stretch, space-between, nowrap);
+		padding-top: calc(78 / 1170 * 100%);
+		@extend %font_Raleway_400;
+		margin-right: 10px;
+		&:nth-child(1) {
+			flex: 0 1 32%;
+		}
+		&:nth-child(2) {
+			flex: 0 1 39%;
+			min-width: 310px;
+		}
+		&:nth-child(3) {
+			flex: 0 1 26%;
+			justify-content: stretch;
+		}
+		.footer_description {
+			@include fonts_properties(calc(14px + 0.3vw), calc(16 / 12 * 100%));
+			color: #c6cbcd;
+			padding: 10px 0;
+		}
+		.footer_followers {
+			@include fonts_properties(calc(18px + 0.1vw), calc(22 / 18 * 100%));
+			padding: calc(15 / (1170 * 0.32) * 100%) 0;
+			text-transform: uppercase;
+			border-bottom: 1px solid #c6cbcd;
+			font-style: italic;
+			span {
+				font-weight: 700;
+				@include fonts_properties(calc(30px + 0.1vw), calc(22 / 18 * 100%));
+				text-transform: uppercase;
+				font-style: normal;
+				&:last-child {
+					@include fonts_properties(calc(18px + 0.1vw), calc(22 / 18 * 100%));
+					padding-right: 5px;
+				}
+			}
+		}
+		.footer_socials {
+			@include flex(row, center, space-between, wrap);
+			margin-bottom: calc(37 / (1170 * 0.32) * 100%);
+			.footer_social-txt {
+				width: 20%;
+				font-style: italic;
+				@extend %font_Raleway_400;
+				@include fonts_properties(calc(12px + 0.1vw), calc(14 / 9 * 100%));
+			}
+			.footer_socials-list {
+				width: 70%;
+				display: grid;
+				grid-template-columns: repeat(8, 1fr);
+				align-items: center;
+			}
+		}
+		.footer__reg {
+			display: grid;
+			grid-template-columns:
+				calc(234 / (1170 * 0.32) * 100%)
+				calc(133 / (1170 * 0.32) * 100%);
+			color: #c6cbcd;
+			.footer_mail {
+				background: #ffffff;
+				border: 1px solid #c6cbcd;
+				padding: 0 10px;
+			}
+			.footer_mail::placeholder {
+				@extend %font_Raleway_400;
+				@include fonts_properties(calc(14px + 0.3vw), calc(16 / 9 * 100%));
+				color: #c6cbcd;
+				text-align: center;
+			}
+
+			.footer_bt {
+				background: #95e1d3;
+				border: none;
+				@extend %font_Raleway_700;
+				@include fonts_properties(calc(14px + 0.5vw), calc(16 / 6 * 100%));
+				color: #ffffff;
+			}
+		}
+		.footer__blogs-list {
+			@include flex(row, stretch, space-between, wrap);
+			.footer__blogs-img-wrap {
+				position: relative;
+				width: 43%;
+				padding-bottom: calc(120 / (1170 * 0.43) * 100%);
+				margin-bottom: 10px;
+				.footer__blogs-img {
+					@extend %img-adapt;
+				}
+			}
+			.no-margin {
+				margin-bottom: 0;
+			}
+			.footer__blogs-item {
+				@include flex(column, stretch, space-evenly, wrap);
+				width: 52%;
+				.footer__blogs-txt {
+					@extend %font_Raleway_700;
+					@include fonts_properties(calc(14px + 0.2vw), calc(16 / 13 * 100%));
+					text-transform: uppercase;
+				}
+				.footer__blogs-sub {
+					@extend %font_Raleway_400;
+					@include fonts_properties(calc(12px + 0.3vw), calc(12 / 8 * 100%));
+					padding: 10px 0;
+				}
+			}
+		}
 	}
+
+	.footer__blogs {
+		@extend %font_Raleway_700;
+		@include fonts_properties(calc(18px + 0.5vw), calc(21 / 15 * 100%));
+		text-transform: uppercase;
+		height: 18%;
+		@include flex(column, stretch, center, wrap);
+	}
+}
+.footer__instagram-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	.footer__instagram-img-wrap {
+		position: relative;
+		padding-bottom: calc(88 / 90 * 100%);
+		.footer__istagram-img {
+			@extend %img-adapt;
+		}
+	}
+}
+.footer__instagram-all {
+	flex: 1;
+	@include flex(column, stretch, center, wrap);
 }
 
 @import "media";
