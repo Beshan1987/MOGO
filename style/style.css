@@ -1348,7 +1348,7 @@ select {
   flex-wrap: wrap;
 }
 .footer__instagram-all .footer__instagram-link {
-  font-size: calc(12px + 0.5vw);
+  font-size: calc(12px + 0.3vw);
   line-height: 116.6666666667%;
   color: #2d3033;
   padding-top: 10px;
