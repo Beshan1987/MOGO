@@ -1280,6 +1280,7 @@ select {
   font-size: calc(14px + 0.5vw);
   line-height: 266.6666666667%;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .footer-list .footer_item .footer__blogs-list {
   display: flex;

@@ -869,6 +869,7 @@
 				@extend %font_Raleway_700;
 				@include fonts_properties(calc(14px + 0.5vw), calc(16 / 6 * 100%));
 				color: #ffffff;
+				text-transform: uppercase;
 				.footer_logo:hover {
 					@extend %hover_icons;
 				}
