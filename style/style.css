@@ -1277,7 +1277,7 @@ select {
 .footer-list .footer_item .footer__reg .footer_bt {
   background: #95e1d3;
   border: none;
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(14px + 0.3vw);
   line-height: 266.6666666667%;
   color: #ffffff;
   text-transform: uppercase;
