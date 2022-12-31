@@ -1692,10 +1692,8 @@ select {
     z-index: 5;
     width: 100%;
   }
-  .burger-new:hover {
-    cursor: auto;
-    z-index: 5;
-    opacity: 1;
+  .burger-new:hover .page-first__main {
+    display: none;
   }
   .burger-new .list_burger {
     display: flex;
@@ -1703,14 +1701,9 @@ select {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 50px 10px;
     z-index: 5;
     background: url(./img/burger/BG_fog.png), url(./img/burger/BG_main.png) no-repeat;
     background-size: cover;
-  }
-  .burger-new .list_burger:hover {
-    cursor: auto;
-    z-index: 5;
   }
   .burger-new .list_burger .text-muted {
     padding: 50px 10px;
@@ -1722,18 +1715,11 @@ select {
     line-height: 150%;
     color: #ffffff !important;
     text-transform: uppercase;
+    z-index: 5;
   }
   .burger-new .list_burger .text-muted:hover {
     color: #e4be8d !important;
     transition: 0.9s;
-    cursor: pointer;
-  }
-  .burger-new .list_burger .nav-logo-img-burger {
-    text-align: start;
-  }
-  .burger-new .list_burger .nav-logo-img-burger:hover {
-    color: #e4be8d;
-    transition: 0.5s;
     cursor: pointer;
   }
   .burger-new .bg-none {

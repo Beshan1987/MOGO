@@ -257,23 +257,15 @@
 		right: 0;
 		z-index: 5;
 		width: 100%;
-		&:hover {
-			cursor: auto;
-			z-index: 5;
-			opacity: 1;
+		&:hover .page-first__main {
+			display: none;
 		}
 		.list_burger {
 			@include flex(column, center, center, wrap);
-			padding: 50px 10px;
 			z-index: 5;
 			background: url(./img/burger/BG_fog.png),
 				url(./img/burger/BG_main.png) no-repeat;
 			background-size: cover;
-			&:hover {
-				cursor: auto;
-				z-index: 5;
-			}
-
 			.text-muted {
 				padding: 50px 10px;
 				flex: 1 1 auto;
@@ -283,17 +275,10 @@
 				@include fonts_properties(calc(16px + 0.2vw), calc(15 / 10 * 100%));
 				color: #ffffff !important;
 				text-transform: uppercase;
+				z-index: 5;
 				&:hover {
 					color: #e4be8d !important;
 					transition: 0.9s;
-					cursor: pointer;
-				}
-			}
-			.nav-logo-img-burger {
-				text-align: start;
-				&:hover {
-					color: #e4be8d;
-					transition: 0.5s;
 					cursor: pointer;
 				}
 			}
@@ -306,8 +291,6 @@
 			.container-fluid {
 				.button_mogo {
 					border: none;
-				}
-				.bg_mogo {
 				}
 			}
 			.burger_bt_flex {
