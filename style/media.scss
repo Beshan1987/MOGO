@@ -260,9 +260,7 @@
 		.list_burger {
 			@include flex(column, center, center, wrap);
 			z-index: 5;
-			background: url(./img/burger/BG_fog.png),
-				url(./img/burger/BG_main.png) no-repeat;
-			background-size: cover;
+			background: url(./img/burger/BG_fog.png);
 			.text-muted {
 				padding: calc(50 / 1170 * 100%) 10px;
 				flex: 1 1 auto;

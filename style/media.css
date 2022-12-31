@@ -268,8 +268,7 @@
     justify-content: center;
     flex-wrap: wrap;
     z-index: 5;
-    background: url(./img/burger/BG_fog.png), url(./img/burger/BG_main.png) no-repeat;
-    background-size: cover;
+    background: url(./img/burger/BG_fog.png);
   }
   .burger-new .list_burger .text-muted {
     padding: 4.2735042735% 10px;
