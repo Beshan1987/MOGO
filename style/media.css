@@ -258,11 +258,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 5;
+    z-index: 5 !important;
     width: 100%;
-  }
-  .burger-new:hover {
-    opacity: 1 !important;
   }
   .burger-new .list_burger {
     display: flex;
@@ -275,12 +272,12 @@
     background-size: cover;
   }
   .burger-new .list_burger .text-muted {
-    padding: 50px 10px;
+    padding: 4.2735042735% 10px;
     flex: 1 1 auto;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    font-size: calc(16px + 0.2vw);
+    font-size: calc(20px + 0.2vw);
     line-height: 150%;
     color: #ffffff !important;
     text-transform: uppercase;
@@ -290,6 +287,7 @@
     color: #e4be8d !important;
     transition: 0.9s;
     cursor: pointer;
+    opacity: 1;
   }
   .burger-new .bg-none {
     background: none !important;

@@ -255,11 +255,8 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		z-index: 5;
+		z-index: 5 !important;
 		width: 100%;
-		&:hover {
-			opacity: 1 !important;
-		}
 		.list_burger {
 			@include flex(column, center, center, wrap);
 			z-index: 5;
@@ -267,12 +264,12 @@
 				url(./img/burger/BG_main.png) no-repeat;
 			background-size: cover;
 			.text-muted {
-				padding: 50px 10px;
+				padding: calc(50 / 1170 * 100%) 10px;
 				flex: 1 1 auto;
 				font-family: "Raleway";
 				font-style: normal;
 				font-weight: 700;
-				@include fonts_properties(calc(16px + 0.2vw), calc(15 / 10 * 100%));
+				@include fonts_properties(calc(20px + 0.2vw), calc(15 / 10 * 100%));
 				color: #ffffff !important;
 				text-transform: uppercase;
 				z-index: 5;
@@ -280,6 +277,7 @@
 					color: #e4be8d !important;
 					transition: 0.9s;
 					cursor: pointer;
+					opacity: 1;
 				}
 			}
 		}
