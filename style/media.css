@@ -261,8 +261,8 @@
     z-index: 5;
     width: 100%;
   }
-  .burger-new:hover .page-first__main {
-    display: none;
+  .burger-new:hover {
+    opacity: 1 !important;
   }
   .burger-new .list_burger {
     display: flex;
@@ -299,6 +299,12 @@
   }
   .burger-new .navbar .burger_bt_flex {
     justify-content: flex-end;
+  }
+  .burger-new .navbar .burger_bt_flex .button_mogo:hover {
+    transition: 0.5s;
+    opacity: 0.8;
+    cursor: pointer;
+    color: #e4be8d;
   }
 }
 @media (max-width: 1000px) {

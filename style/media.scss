@@ -257,8 +257,8 @@
 		right: 0;
 		z-index: 5;
 		width: 100%;
-		&:hover .page-first__main {
-			display: none;
+		&:hover {
+			opacity: 1 !important;
 		}
 		.list_burger {
 			@include flex(column, center, center, wrap);
@@ -295,6 +295,12 @@
 			}
 			.burger_bt_flex {
 				justify-content: flex-end;
+				.button_mogo:hover {
+					transition: 0.5s;
+					opacity: 0.8;
+					cursor: pointer;
+					color: #e4be8d;
+				}
 			}
 		}
 	}
