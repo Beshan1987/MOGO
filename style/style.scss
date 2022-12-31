@@ -21,6 +21,7 @@
 	padding: 5px 15px;
 	.nav-logo_wrap {
 		width: 10%;
+		position: relative;
 		&:hover {
 			@extend %hover_icons;
 		}
@@ -956,6 +957,10 @@
 	@extend %font_Raleway_700;
 	@include fonts_properties(calc(12px + 0.5vw), calc(14 / 6 * 100%));
 	text-align: center;
+}
+
+.burger-new {
+	display: none;
 }
 
 @import "media";

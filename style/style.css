@@ -303,6 +303,7 @@ select {
 }
 .page-first__nav_container .nav-logo_wrap {
   width: 10%;
+  position: relative;
 }
 .page-first__nav_container .page-first__nav_burger {
   display: none;
@@ -1365,6 +1366,10 @@ select {
   text-align: center;
 }
 
+.burger-new {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .page-first__nav_container .page-first__nav .page-first__nav-link {
     font-family: "Raleway";
@@ -1430,7 +1435,6 @@ select {
   }
   .page-first__nav_container {
     padding: 0 30px;
-    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
   }
   .page-first__nav_container .nav-logo_wrap {
     width: 100%;
@@ -1443,6 +1447,7 @@ select {
   }
   .page-first__nav_container .page-first__nav_burger {
     display: inline-block;
+    display: none;
   }
   .page-first__nav-footer-item a p {
     display: none;
@@ -1679,6 +1684,67 @@ select {
   .footer-list .footer_item {
     margin-right: 0;
   }
+  .burger-new {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 100%;
+  }
+  .burger-new:hover {
+    cursor: auto;
+    z-index: 5;
+    opacity: 1;
+  }
+  .burger-new .list_burger {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+    z-index: 5;
+    background: url(./img/burger/BG_fog.png), url(./img/burger/BG_main.png) no-repeat;
+    background-size: cover;
+  }
+  .burger-new .list_burger:hover {
+    cursor: auto;
+    z-index: 5;
+  }
+  .burger-new .list_burger .text-muted {
+    padding: 50px 10px;
+    flex: 1 1 auto;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(16px + 0.2vw);
+    line-height: 150%;
+    color: #ffffff !important;
+    text-transform: uppercase;
+  }
+  .burger-new .list_burger .text-muted:hover {
+    color: #e4be8d !important;
+    transition: 0.9s;
+    cursor: pointer;
+  }
+  .burger-new .list_burger .nav-logo-img-burger {
+    text-align: start;
+  }
+  .burger-new .list_burger .nav-logo-img-burger:hover {
+    color: #e4be8d;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .burger-new .bg-none {
+    background: none !important;
+  }
+  .burger-new .navbar .container-fluid .button_mogo {
+    border: none;
+  }
+  .burger-new .navbar .burger_bt_flex {
+    justify-content: flex-end;
+  }
 }
 @media (max-width: 1000px) {
   .footer-list {
@@ -1695,5 +1761,9 @@ select {
   .footer-list .footer_item:nth-child(3) {
     width: 90%;
     flex: 0 1 40%;
+  }
+  .page-first__nav_container {
+    padding: 0;
+    margin: 0 5px;
   }
 }/*# sourceMappingURL=style.css.map */
